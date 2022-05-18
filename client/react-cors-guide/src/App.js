@@ -1,8 +1,8 @@
 import "./App.css";
-import * as api from "./API.js";
 
-import { Container, Stack, Button } from "react-bootstrap";
+import { Stack } from "react-bootstrap";
 import Header from "./components/Navbar";
+import Cart from "./components/Cart";
 function App() {
 	// const makeAPICall = async () => {
 	//   try {
@@ -20,34 +20,13 @@ function App() {
 	//   makeAPICall();
 	// }, [])
 
-	async function showBasket() {
-		const items = await api.getBasket(15);
-		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
-	}
-	async function addItemToBasket() {
-		const items = await api.addItemToBasket(15, 7, 1);
-		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
-		showBasket();
-	}
-
 	return (
 		<div className="App">
 			<Stack gap={5}>
 				<div>
 					<Header />
 				</div>
-				<div>
-					<Container>
-						<div id="data">React Cors Guideee</div>
-						<Button variant="outline-secondary" onClick={showBasket}>
-							Show basket
-						</Button>
-
-						<Button variant="outline-warning" onClick={addItemToBasket}>
-							Add item
-						</Button>
-					</Container>
-				</div>
+				<Cart />
 			</Stack>
 		</div>
 	);
