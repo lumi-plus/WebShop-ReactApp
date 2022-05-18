@@ -1,77 +1,13 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import {
-	Navbar,
-	NavDropdown,
-	Nav,
-	Container,
-	Form,
-	FormControl,
-	Button,
-} from "react-bootstrap";
+import { Navbar, NavDropdown, Nav, Container, Button } from "react-bootstrap";
 
-import Basket from "../pages/Basket";
-import Login from "../pages/Login";
+import Cart_page from "../../pages/Cart_page";
+import Login_page from "../../pages/Login_page";
 
 export default function Header() {
 	return (
 		<>
 			<div>
-				{/* <Navbar
-					collapseOnSelect
-					fixed="top"
-					expand="md"
-					bg="dark"
-					variant="dark"
-				>
-					<Container>
-						<Navbar.Brand href="/home">
-							<h2>ellö</h2>
-						</Navbar.Brand>
-						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-						<Navbar.Collapse id="responsive-navbar-nav">
-							<Nav>
-								<Nav.Link href="/man">Man</Nav.Link>
-								<Nav.Link href="/woman">Woman</Nav.Link>
-								<NavDropdown title="More" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="#action/3.1">
-										First filter
-									</NavDropdown.Item>
-									<NavDropdown.Item href="#action/3.2">
-										Another filter
-									</NavDropdown.Item>
-									<NavDropdown.Item href="#action/3.3">
-										Something
-									</NavDropdown.Item>
-									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">
-										Separated link
-									</NavDropdown.Item>
-								</NavDropdown>
-							</Nav>
-							<Nav>
-								<Nav.Link href="/sale" className="font-weight-bold">
-									Sale
-								</Nav.Link>
-							</Nav>
-							<Nav>
-								<Nav.Link href="/cart" className="font-weight-bold">
-									Cart
-								</Nav.Link>
-							</Nav>
-
-							<Form className="d-flex">
-								<FormControl
-									type="search"
-									placeholder="Search"
-									className="me-2"
-									aria-label="Search"
-								/>
-								<Button variant="outline-success">Search</Button>
-							</Form>
-						</Navbar.Collapse>
-					</Container>
-				</Navbar> */}
-
 				<Navbar bg="dark" expand="md" variant="dark">
 					<Container fluid>
 						<Navbar.Brand href="/home">ellö</Navbar.Brand>
@@ -123,8 +59,8 @@ export default function Header() {
 						<Route path="/Man" element={<Man />} />
 						<Route path="/Woman" element={<Woman />} />
 						<Route path="/Sale" element={<Sale />} />
-						<Route path="/login" element={<Login />} />
-						<Route path="/Cart" element={<Basket />} />
+						<Route path="/login" element={<Login_page />} />
+						<Route path="/Cart" element={<Cart_page />} />
 					</Routes>
 				</BrowserRouter>
 			</div>

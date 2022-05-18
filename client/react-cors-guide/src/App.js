@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Stack } from "react-bootstrap";
-import Header from "./components/Navbar";
+import Header from "./components/Navbar/Navbar";
 
 function App() {
 	// const makeAPICall = async () => {
@@ -22,9 +22,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Stack gap={5}>
-				<Header />
-			</Stack>
+			<Header />
 		</div>
 	);
 }

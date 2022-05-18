@@ -1,5 +1,5 @@
-import * as api from "../API.js";
-import { Container, Stack, Button } from "react-bootstrap";
+import * as api from "../../API.js";
+import { Container, Button } from "react-bootstrap";
 
 export default function Cart() {
 	async function showBasket() {
