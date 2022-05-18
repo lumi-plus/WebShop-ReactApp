@@ -1,0 +1,49 @@
+{
+  "customers": [
+    {
+      "customerId": 15,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": [
+        {
+          "itemId": 1,
+          "itemQuantity": 3
+        },
+        {
+          "itemId": 4,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 7,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 16,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": []
+    }
+  ],
+  "items": [
+    {
+      "itemId": 16,
+      "itemName": "Second item",
+      "itemDescription": "Second item Description",
+      "itemPrice": 600,
+      "itemCategory": 2,
+      "itemIMG": "/seconditem.img",
+      "itemOnSale": "no"
+    },
+    {
+      "itemId": 15,
+      "itemName": "First item",
+      "itemDescription": "First item Description",
+      "itemPrice": 600,
+      "itemCategory": 1,
+      "itemIMG": "/firstitem.img",
+      "itemOnSale": "no"
+    }
+  ]
+}

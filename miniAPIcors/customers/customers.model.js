@@ -1,14 +1,14 @@
 import * as fs from "fs/promises";
-const CUSTOMERS_FILE = "./customers/customers.json";
-
+// const CUSTOMERS_FILE = "./customers/customers.json";
+const DB_FILE = "./db.json";
 
 
 // return all customer from file
 export async function getAll() {
   try {
-    let customersTxt = await fs.readFile(CUSTOMERS_FILE);
-    let customers = JSON.parse(customersTxt);
-    return customers;
+    let dbTxt = await fs.readFile(DB_FILE);
+    let db = JSON.parse(dbTxt);
+    return db.customers;
   } catch (err) {
     if (err.code === "ENOENT") {
       // file does not exits
@@ -21,8 +21,11 @@ export async function getAll() {
 
 // save array of customers to file
 async function save(customers = []) {
-  let customersTxt = JSON.stringify(customers);
-  await fs.writeFile(CUSTOMERS_FILE, customersTxt);
+  let dbTxt = await fs.readFile(DB_FILE);
+  let db = JSON.parse(dbTxt);
+  db.customers = customers;
+  dbTxt = JSON.stringify(db, null, 2);
+  await fs.writeFile(DB_FILE, dbTxt);
 }
 
 // test function for customer ID
