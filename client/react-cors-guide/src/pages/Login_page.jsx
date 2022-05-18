@@ -1,8 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 
-export default function LoginPage() {
+export default function LoginPage({ customerFistName }) {
 	return (
 		<div className="mx-auto" style={{ maxWidth: "300px" }}>
+			<h1>{`Hi ${customerFistName}`}</h1>
 			<Form className>
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>First name:</Form.Label>
