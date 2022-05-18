@@ -54,28 +54,29 @@ export default function Header() {
 					</Container>
 				</Navbar>
 
-				<BrowserRouter>
+				{/* <BrowserRouter>
 					<Routes>
+						<Route path="/" element={<App />} />
 						<Route path="/Man" element={<Man />} />
 						<Route path="/Woman" element={<Woman />} />
 						<Route path="/Sale" element={<Sale />} />
 						<Route path="/login" element={<Login_page />} />
 						<Route path="/Cart" element={<Cart_page />} />
 					</Routes>
-				</BrowserRouter>
+				</BrowserRouter> */}
 			</div>
 		</>
 	);
 
-	function Man() {
-		return <h2>Man</h2>;
-	}
+	// function Man() {
+	// 	return <h2>Man</h2>;
+	// }
 
-	function Woman() {
-		return <h2>Woman</h2>;
-	}
+	// function Woman() {
+	// 	return <h2>Woman</h2>;
+	// }
 
-	function Sale() {
-		return <h2>Sale</h2>;
-	}
+	// function Sale() {
+	// 	return <h2>Sale</h2>;
+	// }
 }
