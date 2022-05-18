@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 
-export default function Login() {
+export default function LoginPage() {
 	return (
 		<div className="mx-auto" style={{ maxWidth: "300px" }}>
 			<Form className>

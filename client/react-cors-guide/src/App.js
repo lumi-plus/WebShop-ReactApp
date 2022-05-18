@@ -1,10 +1,9 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import Cart_page from "./pages/Cart_page";
-import Login_page from "./pages/Login_page";
+import CartPage from "./pages/Cart_page";
+import LoginPage from "./pages/Login_page";
 
-import { Stack } from "react-bootstrap";
 import Header from "./components/Navbar/Navbar";
 
 function App() {
@@ -12,17 +11,22 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 				<Header />
-				<div>defrfrf</div>
+
 				<Routes>
-					<Route path="/Man" element={<Man />} />
-					<Route path="/Woman" element={<Woman />} />
-					<Route path="/Sale" element={<Sale />} />
-					<Route path="/login" element={<Login_page />} />
-					<Route path="/Cart" element={<Cart_page />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/home" element={<Home />} />
+					<Route path="/man" element={<Man />} />
+					<Route path="/woman" element={<Woman />} />
+					<Route path="/sale" element={<Sale />} />
+					<Route path="/login" element={<LoginPage />} />
+					<Route path="/cart" element={<CartPage />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
 	);
+	function Home() {
+		return <h2>Home</h2>;
+	}
 
 	function Man() {
 		return <h2>Man</h2>;

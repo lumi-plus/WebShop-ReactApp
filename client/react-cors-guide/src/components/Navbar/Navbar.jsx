@@ -1,8 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navbar, NavDropdown, Nav, Container, Button } from "react-bootstrap";
-
-import Cart_page from "../../pages/Cart_page";
-import Login_page from "../../pages/Login_page";
 
 export default function Header() {
 	return (
