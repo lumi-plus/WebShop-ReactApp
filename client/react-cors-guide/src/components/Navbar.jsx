@@ -9,6 +9,9 @@ import {
 	Button,
 } from "react-bootstrap";
 
+import Basket from "../pages/Basket";
+import Login from "../pages/Login";
+
 export default function Header() {
 	return (
 		<>
@@ -71,7 +74,7 @@ export default function Header() {
 
 				<Navbar bg="dark" expand="md" variant="dark">
 					<Container fluid>
-						<Navbar.Brand href="#">ellö</Navbar.Brand>
+						<Navbar.Brand href="/home">ellö</Navbar.Brand>
 						<Navbar.Toggle aria-controls="navbarScroll" />
 						<Navbar.Collapse id="navbarScroll">
 							<Nav
@@ -120,6 +123,8 @@ export default function Header() {
 						<Route path="/Man" element={<Man />} />
 						<Route path="/Woman" element={<Woman />} />
 						<Route path="/Sale" element={<Sale />} />
+						<Route path="/login" element={<Login />} />
+						<Route path="/Cart" element={<Basket />} />
 					</Routes>
 				</BrowserRouter>
 			</div>

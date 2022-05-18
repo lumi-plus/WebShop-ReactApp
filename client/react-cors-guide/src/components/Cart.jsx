@@ -2,8 +2,7 @@ import * as api from "../API.js";
 import { Container, Stack, Button } from "react-bootstrap";
 
 export default function Cart() {
-
-    async function showBasket() {
+	async function showBasket() {
 		const items = await api.getBasket(15);
 		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
 	}
@@ -12,16 +11,21 @@ export default function Cart() {
 		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
 		showBasket();
 	}
-    return (
-        <>	<div>
-        <Container>
-            <div id="data">React Cors Guideee</div>
-            <Button variant="outline-secondary" onClick={showBasket}>
-                Show basket
-            </Button>
+	return (
+		<>
+			{" "}
+			<div>
+				<Container>
+					<div id="data">React Cors Guideee</div>
+					<Button variant="outline-secondary" onClick={showBasket}>
+						Show basket
+					</Button>
 
-            <Button variant="outline-warning" onClick={addItemToBasket}>
-                Add item
-            </Button>
-        </Container>
-    </div> </>)}
+					<Button variant="outline-warning" onClick={addItemToBasket}>
+						Add item
+					</Button>
+				</Container>
+			</div>{" "}
+		</>
+	);
+}
