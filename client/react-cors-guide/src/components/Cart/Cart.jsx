@@ -11,6 +11,11 @@ export default function Cart() {
 		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
 		showBasket();
 	}
+	async function deleteItemFromBasket() {
+		const items = await api.deleteItemFromBasket(15, 7, 1);
+		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
+		showBasket();
+	}
 	return (
 		<>
 			{" "}
@@ -23,6 +28,9 @@ export default function Cart() {
 
 					<Button variant="outline-warning" onClick={addItemToBasket}>
 						Add item
+					</Button>
+					<Button variant="outline-danger" onClick={deleteItemFromBasket}>
+						Delete item
 					</Button>
 				</Container>
 			</div>{" "}
