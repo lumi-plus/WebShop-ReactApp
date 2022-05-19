@@ -8,6 +8,13 @@ import Header from "./components/Navbar/Navbar";
 
 function App() {
 	const [customerFistName, setUser] = useState("Jesse");
+
+	const [name, updateName] = useState("James");
+
+	const changeName = (newName) => {
+		updateName([...name, newName]);
+	};
+
 	return (
 		<div className="App">
 			<BrowserRouter>
@@ -21,7 +28,13 @@ function App() {
 					<Route path="/sale" element={<Sale />} />
 					<Route
 						path="/login"
-						element={<LoginPage customerFistName={customerFistName} />}
+						element={
+							<LoginPage
+								customerFistName={customerFistName}
+								changeName={changeName}
+								name={name}
+							/>
+						}
 					/>
 					<Route path="/cart" element={<CartPage />} />
 				</Routes>
