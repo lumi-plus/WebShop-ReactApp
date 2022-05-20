@@ -1,4 +1,5 @@
 import { Navbar, NavDropdown, Nav, Container, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 export default function Header() {
 	return (
@@ -6,7 +7,9 @@ export default function Header() {
 			<div>
 				<Navbar bg="dark" expand="md" variant="dark">
 					<Container fluid>
-						<Navbar.Brand href="/home">ellö</Navbar.Brand>
+						<LinkContainer to="/home">
+							<Navbar.Brand>ellö</Navbar.Brand>
+						</LinkContainer>
 						<Navbar.Toggle aria-controls="navbarScroll" />
 						<Navbar.Collapse id="navbarScroll">
 							<Nav
@@ -14,65 +17,52 @@ export default function Header() {
 								style={{ maxHeight: "300px" }}
 								navbarScroll
 							>
-								<Nav.Link href="/man">Man</Nav.Link>
-								<Nav.Link href="/woman">Woman</Nav.Link>
+								<LinkContainer to="/man">
+									<Nav.Link>Man</Nav.Link>
+								</LinkContainer>
+								<LinkContainer to="/woman">
+									<Nav.Link>Woman</Nav.Link>
+								</LinkContainer>
+
 								<NavDropdown title="More" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="#action/3.1">
-										First filter
-									</NavDropdown.Item>
-									<NavDropdown.Item href="#action/3.2">
-										Another filter
-									</NavDropdown.Item>
-									<NavDropdown.Item href="#action/3.3">
-										Something
-									</NavDropdown.Item>
+									<LinkContainer to="#action/3.1">
+										<NavDropdown.Item>First filter</NavDropdown.Item>
+									</LinkContainer>
+									<LinkContainer to="#action/3.2">
+										<NavDropdown.Item href="#action/3.2">
+											Another filter
+										</NavDropdown.Item>
+									</LinkContainer>
+									<LinkContainer to="#action/3.3">
+										<NavDropdown.Item href="#action/3.3">
+											Something
+										</NavDropdown.Item>
+									</LinkContainer>
 									<NavDropdown.Divider />
-									<NavDropdown.Item href="#action/3.4">
-										Separated link
-									</NavDropdown.Item>
+									<LinkContainer to="#action/3.4">
+										<NavDropdown.Item>Separated link</NavDropdown.Item>
+									</LinkContainer>
 								</NavDropdown>
-								<Nav.Link href="/sale" className="text-warning">
-									Sale
-								</Nav.Link>
-							</Nav>
-							<Nav></Nav>
-							<Nav>
-								<Nav.Link href="/login" className="font-weight-bold">
-									Login
-								</Nav.Link>
+								<LinkContainer to="/sale">
+									<Nav.Link className="text-warning">Sale</Nav.Link>
+								</LinkContainer>
 							</Nav>
 							<Nav>
-								<Nav.Link href="/cart">
-									<Button variant="outline-warning">Cart</Button>
-								</Nav.Link>
+								<LinkContainer to="/login">
+									<Nav.Link>Login</Nav.Link>
+								</LinkContainer>
+							</Nav>
+							<Nav>
+								<LinkContainer to="/cart">
+									<Nav.Link>
+										<Button variant="outline-warning">Cart</Button>
+									</Nav.Link>
+								</LinkContainer>
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
 				</Navbar>
-
-				{/* <BrowserRouter>
-					<Routes>
-						<Route path="/" element={<App />} />
-						<Route path="/Man" element={<Man />} />
-						<Route path="/Woman" element={<Woman />} />
-						<Route path="/Sale" element={<Sale />} />
-						<Route path="/login" element={<Login_page />} />
-						<Route path="/Cart" element={<Cart_page />} />
-					</Routes>
-				</BrowserRouter> */}
 			</div>
 		</>
 	);
-
-	// function Man() {
-	// 	return <h2>Man</h2>;
-	// }
-
-	// function Woman() {
-	// 	return <h2>Woman</h2>;
-	// }
-
-	// function Sale() {
-	// 	return <h2>Sale</h2>;
-	// }
 }
