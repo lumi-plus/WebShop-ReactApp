@@ -4,7 +4,7 @@ import { useState } from "react";
 import CartPage from "./pages/Cart_page";
 import LoginPage from "./pages/Login_page";
 
-import Header from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 	const [customerFistName, setUser] = useState("Jesse");
@@ -18,7 +18,7 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Header />
+				<Navbar />
 
 				<Routes>
 					<Route path="/" element={<Home />} />

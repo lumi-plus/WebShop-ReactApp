@@ -1,7 +1,7 @@
 import { Navbar, NavDropdown, Nav, Container, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
-export default function Header() {
+export default function NavbarComponent() {
 	return (
 		<>
 			<div>
