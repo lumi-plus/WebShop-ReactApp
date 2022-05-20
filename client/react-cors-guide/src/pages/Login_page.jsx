@@ -2,9 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 
 export default function LoginPage({ customerFistName, changeName, name }) {
-	const [contactInfo, setContactInfo] = useState({
-		name: "",
-	});
+	const [contactInfo, setContactInfo] = useState({});
 
 	const handleChange = (event) => {
 		setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
@@ -13,7 +11,7 @@ export default function LoginPage({ customerFistName, changeName, name }) {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		changeName(contactInfo);
-		setContactInfo({ name: "" });
+		setContactInfo({ name });
 	};
 
 	return (
