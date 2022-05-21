@@ -11,6 +11,11 @@ function App() {
 
 	const [name, updateName] = useState("James");
 
+	function updateFirstName(e) {
+		setUser(e.target.value);
+		console.log(customerFistName);
+	}
+
 	const changeName = (newName) => {
 		updateName([...name, newName]);
 	};
@@ -33,6 +38,7 @@ function App() {
 								customerFistName={customerFistName}
 								changeName={changeName}
 								name={name}
+								updateFirstName={updateFirstName}
 							/>
 						}
 					/>

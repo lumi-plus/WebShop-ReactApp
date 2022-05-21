@@ -1,7 +1,12 @@
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 
-export default function LoginPage({ customerFistName, changeName, name }) {
+export default function LoginPage({
+	updateFirstName,
+	customerFistName,
+	changeName,
+	name,
+}) {
 	const [contactInfo, setContactInfo] = useState({});
 
 	const handleChange = (event) => {
@@ -16,11 +21,15 @@ export default function LoginPage({ customerFistName, changeName, name }) {
 
 	return (
 		<div className="mx-auto" style={{ maxWidth: "300px" }}>
-			<h1>{`Hi ${name}`} </h1>
+			<h1>{`Hi ${customerFistName}`} </h1>
 			<Form className>
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>First name:</Form.Label>
-					<Form.Control type="name" placeholder="Enter first name:" />
+					<Form.Control
+						type="name"
+						placeholder="Enter first name:"
+						onChange={updateFirstName}
+					/>
 					<Form.Text className="text-muted">
 						We'll never share your name with anyone else.
 					</Form.Text>
@@ -38,7 +47,7 @@ export default function LoginPage({ customerFistName, changeName, name }) {
 				</Button>
 			</Form>
 			<div className="form-container">
-				<form onSubmit={handleSubmit}>
+				<form onSubmit={updateFirstName}>
 					<div>
 						<h3>Contact Form</h3>
 					</div>
@@ -47,7 +56,6 @@ export default function LoginPage({ customerFistName, changeName, name }) {
 							type="text"
 							name="name"
 							placeholder="Name"
-							value={contactInfo.name}
 							onChange={handleChange}
 						/>
 					</div>
