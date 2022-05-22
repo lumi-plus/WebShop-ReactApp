@@ -1,29 +1,35 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
+
 import CartPage from "./pages/Cart_page";
 import LoginPage from "./pages/Login_page";
-
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-	const [customerFistName, setUser] = useState("Jesse");
+	const [customer, setCustomer] = useState({
+		id: createId(),
+		firstName: "",
+		secondName: "",
+		email: "",
+		loggedIn: false,
+	});
 
-	const [name, updateName] = useState("James");
-
-	function updateFirstName(e) {
-		setUser(e.target.value);
-		console.log(customerFistName);
+	function createId() {
+		return getRandomInt(0, 10000);
 	}
 
-	const changeName = (newName) => {
-		updateName([...name, newName]);
-	};
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
 
 	return (
 		<div className="App">
 			<BrowserRouter>
 				<Navbar />
+				<Greeting customer={customer} />
 
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -35,10 +41,8 @@ function App() {
 						path="/login"
 						element={
 							<LoginPage
-								customerFistName={customerFistName}
-								changeName={changeName}
-								name={name}
-								updateFirstName={updateFirstName}
+								setRootCustomer={setCustomer}
+								customerId={customer.id}
 							/>
 						}
 					/>
@@ -61,6 +65,13 @@ function App() {
 
 	function Sale() {
 		return <h2>Sale</h2>;
+	}
+
+	function Greeting({ customer }) {
+		const loggedIn = customer.loggedIn;
+		if (loggedIn) {
+			return <h1>{`Hi ${customer.firstName}`}</h1>;
+		}
 	}
 }
 export default App;
