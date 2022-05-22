@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import * as api from "../API.js";
 
 export default function LoginPage({ setRootCustomer, customerId }) {
 	const [customer, setCustomer] = useState({
@@ -22,7 +23,18 @@ export default function LoginPage({ setRootCustomer, customerId }) {
 		event.preventDefault();
 		customer.loggedIn = true;
 		setRootCustomer(customer);
+		createCustomer({ customer });
 		console.log(customer);
+	}
+
+	async function createCustomer({ customer }) {
+		const items = await api.createCustomer(
+			customer.id,
+			customer.firstName,
+			customer.secondName,
+			customer.email
+		);
+		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
 	}
 
 	return (

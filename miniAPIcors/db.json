@@ -24,6 +24,13 @@
       "customerFistName": "John",
       "customerLastName": "Johnson",
       "customerBasket": []
+    },
+    {
+      "customerId": 7868,
+      "customerFistName": "Jone",
+      "customerLastName": "Jar",
+      "customerEmail": "Jar@xyz.com",
+      "customerBasket": []
     }
   ],
   "items": [
