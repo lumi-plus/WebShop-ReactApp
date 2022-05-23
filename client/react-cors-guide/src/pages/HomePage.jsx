@@ -1,6 +1,6 @@
 import React from "react";
 import "../globalStyles.css";
-import Item from "../components/Item";
+import Item from "../components/Item/Index";
 import data from "../db.json";
 
 //HomePage works and now is displaying nothing because data is not passing trough +

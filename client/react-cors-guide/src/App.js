@@ -2,9 +2,9 @@ import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 
-import CartPage from "./pages/Cart_page";
-import LoginPage from "./pages/Login_page";
-import Product from "./pages/Test_Page/Test_page_Linnea";
+import CartPage from "./pages/CartPage";
+import LoginPage from "./pages/LoginPage";
+import Product from "./pages/TestPage/TestPageLinnea";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 import Herobanner from "./components/Herobanner/Herobanner";

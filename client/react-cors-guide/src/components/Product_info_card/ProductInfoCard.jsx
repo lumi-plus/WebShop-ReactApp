@@ -1,7 +1,7 @@
 import React, { render, useState } from "react";
-import "./Product_Info_Card.css";
+import "./ProductInfoCard.css";
 import { Container, Row, Col, Grid, Card, Button } from "react-bootstrap";
-import Size_Filter from "../Size_Filter/Size_Filter";
+import Size_Filter from "../SizeFilter/SizeFilter";
 import Button_Counter from "../Button_Counter/Button_Counter";
 import * as api from "../../API.js";
 
