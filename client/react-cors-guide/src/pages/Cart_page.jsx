@@ -1,6 +1,6 @@
 import Cart from "../components/Cart/Cart";
 
-export default function Cart_Page() {
+export default function CartPage() {
 	return (
 		<div>
 			<Cart />
