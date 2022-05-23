@@ -1,0 +1,166 @@
+{
+  "customers": [
+    {
+      "customerId": 15,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": [
+        {
+          "itemId": 11,
+          "itemQuantity": 3
+        },
+        {
+          "itemId": 14,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 17,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 16,
+      "customerFistName": "John",
+      "customerLastName": "Johnson",
+      "customerBasket": []
+    }
+  ],
+  "items": [
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemIMG": "../../resources/images/MAN-1/1.1_man.jpeg",
+      "itemOnSale": ""
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "./resources/images/MAN-2/2.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "./resources/images/MAN-3/3.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemIMG": "/resources/images/MAN-1/1.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-2/2.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-3/3.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-1/1.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-2/2.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-3/3.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-1/1.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-2/2.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-3/3.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 11,
+      "itemName": "Liam",
+      "itemDescription": "Head into the future with confidence. Not to mention style. Inspired by running silhouettes from the '80s archive, NMD was born in 2015 to merge sleek style with modern technologies and comfort. These Liam shoes keep your feet cushioned with a responsive BOOST midsole. Chic transparent overlays add a cyberpunk vibe. The future is yours. Go and get it. ",
+      "itemPrice": 148,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-1/1.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 12,
+      "itemName": "Allan",
+      "itemDescription": "The '80s were a high point of basketball style, and the Forum quickly became legend, first on the hardwood and then on the streets.      These juniors' shoes come fully equipped with a leather upper, chunky outsole and ankle strap. Tap into the decade's energy every time you lace them up.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-2/2.1_man.jpeg",
+      "itemOnSale": "sale"
+    },
+    {
+      "itemId": 13,
+      "itemName": "Oliver",
+      "itemDescription": "Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s.       The Oliver shoe is now a lifestyle staple for streetwear enthusiasts.       The world-famous shell toe feature remains, providing style and protection.",
+      "itemPrice": 108,
+      "itemCategory": 1,
+      "itemIMG": "/images/MAN-3/3.1_man.jpeg",
+      "itemOnSale": "sale"
+    }
+  ]
+}

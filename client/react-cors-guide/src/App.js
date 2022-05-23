@@ -4,8 +4,10 @@ import { useState } from "react";
 
 import CartPage from "./pages/Cart_page";
 import LoginPage from "./pages/Login_page";
-import Navbar from "./components/Navbar/Navbar";
 import Product from "./pages/Test_Page/Test_page_Linnea";
+import HomePage from "./pages/HomePage";
+import Navbar from "./components/Navbar/Navbar";
+import Herobanner from "./components/Herobanner/Herobanner";
 
 function App() {
 	const [customer, setCustomer] = useState({
@@ -24,7 +26,7 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/home" element={<Home />} />
+					<Route path="/home" element={<HomePage />} />
 					<Route path="/man" element={<Man />} />
 					<Route path="/woman" element={<Woman />} />
 					<Route path="/sale" element={<Sale />} />
@@ -56,7 +58,7 @@ function App() {
 	}
 
 	function Sale() {
-		return <h2>Sale</h2>;
+		return <Herobanner />;
 	}
 
 	function Greeting({ customer }) {
