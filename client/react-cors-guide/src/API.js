@@ -41,19 +41,16 @@ export async function addItemToBasket(customerId, itemId, itemQuantity) {
 }
 
 export async function deleteItemFromBasket(customerId, itemId, itemQuantity) {
-	await fetch(
-		`http://localhost:8080/customers/${customerId}/basket/${itemId}`,
-		{
-			mode: "cors",
-			method: "DELETE",
-			headers: {
-				Accept: "application/json",
-				"Content-Type": "application/json",
-				"Access-Control-Allow-Origin": "*",
-			},
-			body: JSON.stringify({ itemId, itemQuantity }),
-		}
-	);
+	await fetch(`http://localhost:8080/customers/${customerId}/basket/`, {
+		mode: "cors",
+		method: "PUT",
+		headers: {
+			Accept: "application/json",
+			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
+		},
+		body: JSON.stringify({ itemId, itemQuantity }),
+	});
 }
 
 export async function createCustomer(
