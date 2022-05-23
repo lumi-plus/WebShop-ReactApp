@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { useState } from "react";
+import { useState, createContext } from "react";
 
 import CartPage from "./pages/CartPage";
 import LoginPage from "./pages/LoginPage";
@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 import Herobanner from "./components/Herobanner/Herobanner";
 
+export const UserContext = createContext();
 function App() {
 	const [customer, setCustomer] = useState({
 		id: createId(),
@@ -16,34 +17,35 @@ function App() {
 		secondName: "",
 		email: "",
 		loggedIn: false,
+		basket: [],
 	});
 
 	return (
-		<div className="App">
-			<BrowserRouter>
-				<Navbar />
-				<Greeting customer={customer} />
-
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/home" element={<HomePage />} />
-					<Route path="/man" element={<Man />} />
-					<Route path="/woman" element={<Woman />} />
-					<Route path="/sale" element={<Sale />} />
-					<Route path="/product" element={<Product />} />
-					<Route
-						path="/login"
-						element={
-							<LoginPage
-								setRootCustomer={setCustomer}
-								customerId={customer.id}
-							/>
-						}
-					/>
-					<Route path="/cart" element={<CartPage />} />
-				</Routes>
-			</BrowserRouter>
-		</div>
+		<UserContext.Provider value={customer}>
+			<div className="App">
+				<BrowserRouter>
+					<Navbar />
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/home" element={<HomePage />} />
+						<Route path="/man" element={<Man />} />
+						<Route path="/woman" element={<Woman />} />
+						<Route path="/sale" element={<Sale />} />
+						<Route path="/product" element={<Product />} />
+						<Route
+							path="/login"
+							element={
+								<LoginPage
+									setRootCustomer={setCustomer}
+									customerId={customer.id}
+								/>
+							}
+						/>
+						<Route path="/cart" element={<CartPage />} />
+					</Routes>
+				</BrowserRouter>
+			</div>
+		</UserContext.Provider>
 	);
 	function Home() {
 		return <h2>Home</h2>;
@@ -59,13 +61,6 @@ function App() {
 
 	function Sale() {
 		return <Herobanner />;
-	}
-
-	function Greeting({ customer }) {
-		const loggedIn = customer.loggedIn;
-		if (loggedIn) {
-			return <h1>{`Hi ${customer.firstName}`}</h1>;
-		}
 	}
 
 	function createId() {

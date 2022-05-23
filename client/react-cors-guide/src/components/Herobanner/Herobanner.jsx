@@ -1,45 +1,45 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
-import { Button, Col } from "react-bootstrap";
-import { Container, Row } from "react-bootstrap";
+import { Button, Col, Row, Container } from "react-bootstrap";
 import "./Herobanner.css";
 import heroimage from "../../resources/images/Index_hero/shoe_vector.png";
+import UserGreetings from "../UserGreetings/UserGreetings";
 
 export default function Herobanner() {
-  return (
-    <Container className="container_hero">
-      <Row className="">
-        <div style={{ display: "flex" }}>
-          <Col lg="7">
-            <h1 className="htext">End of month?</h1>
-            <Button
-              style={{
-                size: 5,
-                marginLeft: 10,
-                height: 45,
-              }}
-              variant="outline-success"
-              size="lg"
-              color="black"
-              className="hero-banner btn"
-            >
-              Shop Sale Now{" "}
-            </Button>
-          </Col>
-          <Col lg="3">
-            <Row className="image_row">
-              <Image
-                className="heroimage"
-                alt="Profile image"
-                img
-                src={heroimage}
-              />
-            </Row>
-          </Col>
-        </div>
-      </Row>
-    </Container>
-  );
+	return (
+		<Container className="container_hero">
+			<Row className="hero-banner_row">
+				<div style={{ display: "flex" }}>
+					<Col lg="7">
+						<UserGreetings />
+						<Button
+							style={{
+								size: 5,
+								marginLeft: 5,
+								height: 45,
+							}}
+							variant="outline-danger"
+							size="lg"
+							color="black"
+							className="hero-banner btn"
+						>
+							Shop Sale Now!
+						</Button>
+					</Col>
+					<Col lg="3">
+						<Row className="image_row">
+							<Image
+								className="heroimage"
+								alt="Profile image"
+								img
+								src={heroimage}
+							/>
+						</Row>
+					</Col>
+				</div>
+			</Row>
+		</Container>
+	);
 }
 /* <div classname ="herobanner">
       <h1 classname = "htext">End of the month?</h1>

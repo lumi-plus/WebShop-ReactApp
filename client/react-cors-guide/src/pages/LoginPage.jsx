@@ -28,13 +28,17 @@ export default function LoginPage({ setRootCustomer, customerId }) {
 	}
 
 	async function createCustomer({ customer }) {
-		const items = await api.createCustomer(
+		const customerCreated = await api.createCustomer(
 			customer.id,
 			customer.firstName,
 			customer.secondName,
 			customer.email
 		);
-		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
+		document.getElementById("data").innerHTML = JSON.stringify(
+			customerCreated,
+			null,
+			2
+		);
 	}
 
 	return (

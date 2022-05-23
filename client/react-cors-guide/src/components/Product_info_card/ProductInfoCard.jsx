@@ -1,4 +1,4 @@
-import React, { render, useState } from "react";
+import React, { render, useState, useEffect } from "react";
 import "./ProductInfoCard.css";
 import { Container, Row, Col, Grid, Card, Button } from "react-bootstrap";
 import Size_Filter from "../SizeFilter/SizeFilter";
@@ -13,13 +13,26 @@ const Product_Info_Card = () => {
 
 	//const ides = item.itemDescription;
 
+	const [products, setProducts] = useState([]);
+	useEffect(() => {
+		setProducts(getItems());
+	}, [products]);
+
+	async function getItems() {
+		const items = await api.getItems();
+
+		console.log(items);
+	}
+
 	return (
 		<Card className="product_card">
 			<Card.Body>
 				<Card.Text> Details:, </Card.Text>
-				<h1> </h1>
-
-				<Card.Text> Color: </Card.Text>
+				<div>
+					<showProductDescription products={products} />
+				</div>
+				<div id="data">items</div>
+				<showProductDescription />y<Card.Text> Color: </Card.Text>
 				<Size_Filter />
 				<Button_Counter />
 				<Button>Add to basked button</Button>
@@ -28,4 +41,7 @@ const Product_Info_Card = () => {
 	);
 };
 
+function showProductDescription({ products }) {
+	return <p>{`Descrption: ${products}`}</p>;
+}
 export default Product_Info_Card;
