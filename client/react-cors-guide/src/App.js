@@ -5,6 +5,7 @@ import { useState } from "react";
 import CartPage from "./pages/Cart_page";
 import LoginPage from "./pages/Login_page";
 import Navbar from "./components/Navbar/Navbar";
+import Product from "./pages/Test_Page/Test_page_Linnea";
 
 function App() {
 	const [customer, setCustomer] = useState({
@@ -27,6 +28,7 @@ function App() {
 					<Route path="/man" element={<Man />} />
 					<Route path="/woman" element={<Woman />} />
 					<Route path="/sale" element={<Sale />} />
+					<Route path="/product" element={<Product />} />
 					<Route
 						path="/login"
 						element={
