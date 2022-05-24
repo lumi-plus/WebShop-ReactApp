@@ -1,7 +1,9 @@
 import { Form, Button } from "react-bootstrap";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { CustomerContext } from "../App";
 import * as api from "../API.js";
+import { Route } from "react-router-dom";
+import HomePage from "./HomePage";
 
 export default function LoginPage() {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
