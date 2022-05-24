@@ -5,15 +5,16 @@ import * as api from "../API.js";
 
 //HomePage works and now is displaying nothing because data is not passing trough +
 // once data will be displayed we will need a list of items --> that's why the Items component is created for
-let read = false;
+// let read = false;
 export default function HomePage() {
 	const [data, setData] = useState();
+	const [read, setState] = useState(false);
 
 	const getItems = async () => {
 		let items = await api.getItems();
 		await setData(items);
 		console.log(items);
-		read = true;
+		setState(true);
 	};
 
 	useEffect(() => {
