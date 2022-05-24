@@ -20,6 +20,7 @@ export default function Cart() {
 			}
 		}
 		fetchData();
+		console.log(products);
 	}, []);
 
 	// const [productInfo, setProductInfo] = useState([]);
@@ -63,15 +64,29 @@ export default function Cart() {
 			</div>
 		</>
 	);
+	// const addToBasket = async () => {
+	// 	fetch(`http://localhost:4000/basket/${user.id}/product/${prodID}`, {
+	// 		method: "PUT",
+	// 	});
+	// 	alert(`${product.name} has been added to basket`);
+	// };
 
 	async function addItemToBasket() {
-		const items = await api.addItemToBasket(customerGlobal.id, 22, 1);
+		const items = await api.addItemToBasket(
+			customerGlobal.id,
+			products.item.itemId,
+			1
+		);
 		const basket = await api.getBasket(customerGlobal.id);
 		setBasket(basket);
 	}
 
 	async function deleteItemFromBasket() {
-		const items = await api.deleteItemFromBasket(customerGlobal.id, 22, -1);
+		const items = await api.deleteItemFromBasket(
+			customerGlobal.id,
+			products.item.itemId,
+			-1
+		);
 		const basket = await api.getBasket(customerGlobal.id);
 		setBasket(basket);
 	}

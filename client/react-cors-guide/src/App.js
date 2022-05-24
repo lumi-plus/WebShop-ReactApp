@@ -11,7 +11,6 @@ import ManPage from "./pages/ManPage";
 import WomanPage from "./pages/WomanPage";
 import Sale from "./pages/Sale";
 import Navbar from "./components/Navbar/Navbar";
-import Herobanner from "./components/Herobanner/Herobanner";
 
 export const CustomerContext = createContext();
 function App() {
@@ -64,24 +63,9 @@ function App() {
 			</div>
 		</CustomerContext.Provider>
 	);
-	function Home() {
-		return <h2>Home</h2>;
-	}
-
-	function Man() {
-		return <h2>Man</h2>;
-	}
-
-	function Woman() {
-		return <h2>Woman</h2>;
-	}
-
-	// function Sale() {
-	// 	return <Herobanner />;
-	// }
 
 	function createId() {
-		return getRandomInt(0, 10000);
+		return getRandomInt(0, 10000000);
 	}
 
 	function getRandomInt(min, max) {
