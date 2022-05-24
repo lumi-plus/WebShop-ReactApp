@@ -18,7 +18,20 @@ function App() {
 		lastName: "",
 		email: "",
 		loggedIn: false,
-		basket: [1, 1, 1],
+		basket: [
+			{
+				itemId: 15,
+				itemQuantity: 1,
+			},
+			{
+				itemId: 11,
+				itemQuantity: 7,
+			},
+			{
+				itemId: 20,
+				itemQuantity: 20,
+			},
+		],
 	});
 	useEffect(() => {
 		if (!customer.loggedIn) {
