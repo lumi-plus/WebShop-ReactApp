@@ -10,12 +10,12 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 import Herobanner from "./components/Herobanner/Herobanner";
 
-export const UserContext = createContext();
+export const CustomerContext = createContext();
 function App() {
 	const [customer, setCustomer] = useState({
 		id: createId(),
 		firstName: "",
-		secondName: "",
+		lastName: "",
 		email: "",
 		loggedIn: false,
 		basket: [1, 1, 1],
@@ -32,7 +32,7 @@ function App() {
 	}
 
 	return (
-		<UserContext.Provider value={customer}>
+		<CustomerContext.Provider value={[customer, setCustomer]}>
 			<div className="App">
 				<BrowserRouter>
 					<Navbar />
@@ -43,15 +43,12 @@ function App() {
 						<Route path="/woman" element={<Woman />} />
 						<Route path="/sale" element={<Sale />} />
 						<Route path="/product" element={<Product />} />
-						<Route
-							path="/login"
-							element={<LoginPage setRootCustomer={setCustomer} />}
-						/>
+						<Route path="/login" element={<LoginPage />} />
 						<Route path="/cart" element={<CartPage />} />
 					</Routes>
 				</BrowserRouter>
 			</div>
-		</UserContext.Provider>
+		</CustomerContext.Provider>
 	);
 	function Home() {
 		return <h2>Home</h2>;

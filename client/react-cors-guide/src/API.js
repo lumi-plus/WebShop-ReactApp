@@ -11,6 +11,19 @@ export async function getItems() {
 	return response.json();
 }
 
+export async function getItem(itemId) {
+	const response = await fetch(`http://localhost:8080/items/${itemId}`, {
+		mode: "cors",
+		method: "GET",
+		headers: {
+			Accept: "application/json",
+			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
+		},
+	});
+	return response.json();
+}
+
 export async function getBasket(customerId) {
 	const response = await fetch(
 		`http://localhost:8080/customers/${customerId}/basket/`,
@@ -64,7 +77,7 @@ export async function createCustomer(customer) {
 		},
 		body: JSON.stringify({
 			customerId: customer.id,
-			customerFistName: customer.firstName,
+			customerFirstName: customer.firstName,
 			customerLastName: customer.secondName,
 			customerEmail: customer.email,
 			customerBasket: customer.basket,
@@ -82,7 +95,7 @@ export async function updateCustomer(customer) {
 		},
 		body: JSON.stringify({
 			customerId: customer.id,
-			customerFistName: customer.firstName,
+			customerFirstName: customer.firstName,
 			customerLastName: customer.secondName,
 			customerEmail: customer.email,
 			customerBasket: customer.basket,

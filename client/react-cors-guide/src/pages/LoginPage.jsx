@@ -1,17 +1,17 @@
 import { Form, Button } from "react-bootstrap";
 import { useState, useContext } from "react";
-import { UserContext } from "../App";
+import { CustomerContext } from "../App";
 import * as api from "../API.js";
 
-export default function LoginPage({ setRootCustomer }) {
-	const customerContext = useContext(UserContext);
+export default function LoginPage() {
+	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
 	const [customer, setCustomer] = useState({
-		id: customerContext.id,
+		id: customerGlobal.id,
 		firstName: "",
-		secondName: "",
+		lastName: "",
 		email: "",
-		loggedIn: customerContext.loggedIn,
-		basket: customerContext.basket,
+		loggedIn: customerGlobal.loggedIn,
+		basket: customerGlobal.basket,
 	});
 
 	function handleChange(event) {
@@ -22,11 +22,11 @@ export default function LoginPage({ setRootCustomer }) {
 		console.log(customer.firstName);
 	}
 
-	function handleSubmit(event) {
+	async function handleSubmit(event) {
 		event.preventDefault();
 		customer.loggedIn = true;
-		setRootCustomer(customer);
-		createCustomer(customer);
+		setCustomerGlobal(customer);
+		await createCustomer(customer);
 		console.log(customer);
 	}
 
@@ -34,9 +34,9 @@ export default function LoginPage({ setRootCustomer }) {
 		await api.createCustomer(customer);
 	}
 
-	if (customerContext.loggedIn) {
+	if (customerGlobal.loggedIn) {
 		return (
-			<h1 className="gtext">{`Hi ${customerContext.firstName}, End of the month?`}</h1>
+			<h1 className="gtext">{`Hi ${customerGlobal.firstName}, End of the month?`}</h1>
 		);
 	}
 
@@ -63,7 +63,7 @@ export default function LoginPage({ setRootCustomer }) {
 						type="text"
 						name="secondName"
 						placeholder="Enter second name"
-						value={customer.secondName.value}
+						value={customer.lastName.value}
 						onChange={handleChange}
 					/>
 				</Form.Group>

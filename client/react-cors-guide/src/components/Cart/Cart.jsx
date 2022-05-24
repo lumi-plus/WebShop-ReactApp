@@ -1,10 +1,10 @@
 import * as api from "../../API.js";
 import { Container, Button } from "react-bootstrap";
 import { useState, useContext } from "react";
-import { UserContext } from "../../App";
+import { CustomerContext } from "../../App";
 
 export default function Cart() {
-	const customerContext = useContext(UserContext);
+	const customerContext = useContext(CustomerContext);
 	return (
 		<>
 			{" "}
