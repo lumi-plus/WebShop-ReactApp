@@ -26,18 +26,12 @@ export default function LoginPage({ setRootCustomer }) {
 		event.preventDefault();
 		customer.loggedIn = true;
 		setRootCustomer(customer);
-		createCustomer({ customer });
+		createCustomer(customer);
 		console.log(customer);
 	}
 
-	async function createCustomer({ customer }) {
-		await api.createCustomer(
-			customer.id,
-			customer.firstName,
-			customer.secondName,
-			customer.email,
-			customer.basket
-		);
+	async function createCustomer(customer) {
+		await api.createCustomer(customer);
 	}
 
 	if (customerContext.loggedIn) {

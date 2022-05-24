@@ -53,13 +53,7 @@ export async function deleteItemFromBasket(customerId, itemId, itemQuantity) {
 	});
 }
 
-export async function createCustomer(
-	customerId,
-	customerFistName,
-	customerLastName,
-	customerEmail,
-	customerBasket
-) {
+export async function createCustomer(customer) {
 	await fetch(`http://localhost:8080/customers`, {
 		mode: "cors",
 		method: "POST",
@@ -69,22 +63,16 @@ export async function createCustomer(
 			"Access-Control-Allow-Origin": "*",
 		},
 		body: JSON.stringify({
-			customerId,
-			customerFistName,
-			customerLastName,
-			customerEmail,
-			customerBasket,
+			customerId: customer.id,
+			customerFistName: customer.firstName,
+			customerLastName: customer.secondName,
+			customerEmail: customer.email,
+			customerBasket: customer.basket,
 		}),
 	});
 }
-export async function updateCustomer(
-	customerId,
-	customerFistName,
-	customerLastName,
-	customerEmail,
-	customerBasket
-) {
-	await fetch(`http://localhost:8080/customers/${customerId}`, {
+export async function updateCustomer(customer) {
+	await fetch(`http://localhost:8080/customers/${customer.id}`, {
 		mode: "cors",
 		method: "PUT",
 		headers: {
@@ -93,11 +81,11 @@ export async function updateCustomer(
 			"Access-Control-Allow-Origin": "*",
 		},
 		body: JSON.stringify({
-			customerId,
-			customerFistName,
-			customerLastName,
-			customerEmail,
-			customerBasket,
+			customerId: customer.id,
+			customerFistName: customer.firstName,
+			customerLastName: customer.secondName,
+			customerEmail: customer.email,
+			customerBasket: customer.basket,
 		}),
 	});
 }

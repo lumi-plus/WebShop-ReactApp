@@ -126,6 +126,17 @@
       "customerLastName": "",
       "customerEmail": "",
       "customerBasket": []
+    },
+    {
+      "customerId": 5821,
+      "customerFistName": "Test Kolejny 2",
+      "customerLastName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        1,
+        1,
+        1
+      ]
     }
   ],
   "items": [
