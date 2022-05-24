@@ -31,17 +31,12 @@ export default function LoginPage({ setRootCustomer }) {
 	}
 
 	async function createCustomer({ customer }) {
-		const customerCreated = await api.createCustomer(
+		await api.createCustomer(
 			customer.id,
 			customer.firstName,
 			customer.secondName,
 			customer.email,
 			customer.basket
-		);
-		document.getElementById("data").innerHTML = JSON.stringify(
-			customerCreated,
-			null,
-			2
 		);
 	}
 

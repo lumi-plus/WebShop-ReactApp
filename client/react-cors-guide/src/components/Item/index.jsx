@@ -20,12 +20,13 @@ export default function Item(props) {
 			<Card>
 				<Label>{item.itemOnSale} </Label>
 				<Link href={`/item/${item.itemId}`}></Link>
-				console.log(item.itemId)
+
 				<Image src={item.itemIMG} alt={item.itemName} />
 				<Info>
 					<Title>{item.itemName}</Title>
 					<Price>{item.itemPrice}€</Price>
 					<IconContainer>
+						{item.itemId}
 						<Icon.CartFill />
 					</IconContainer>
 				</Info>

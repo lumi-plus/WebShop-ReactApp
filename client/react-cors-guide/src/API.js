@@ -77,3 +77,27 @@ export async function createCustomer(
 		}),
 	});
 }
+export async function updateCustomer(
+	customerId,
+	customerFistName,
+	customerLastName,
+	customerEmail,
+	customerBasket
+) {
+	await fetch(`http://localhost:8080/customers/${customerId}`, {
+		mode: "cors",
+		method: "PUT",
+		headers: {
+			Accept: "application/json",
+			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
+		},
+		body: JSON.stringify({
+			customerId,
+			customerFistName,
+			customerLastName,
+			customerEmail,
+			customerBasket,
+		}),
+	});
+}
