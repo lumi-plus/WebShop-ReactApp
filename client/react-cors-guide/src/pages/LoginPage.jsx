@@ -1,14 +1,17 @@
 import { Form, Button } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { UserContext } from "../App";
 import * as api from "../API.js";
 
-export default function LoginPage({ setRootCustomer, customerId }) {
+export default function LoginPage({ setRootCustomer }) {
+	const customerContext = useContext(UserContext);
 	const [customer, setCustomer] = useState({
-		id: customerId,
+		id: customerContext.id,
 		firstName: "",
 		secondName: "",
 		email: "",
-		loggedIn: false,
+		loggedIn: customerContext.loggedIn,
+		basket: customerContext.basket,
 	});
 
 	function handleChange(event) {
@@ -32,12 +35,19 @@ export default function LoginPage({ setRootCustomer, customerId }) {
 			customer.id,
 			customer.firstName,
 			customer.secondName,
-			customer.email
+			customer.email,
+			customer.basket
 		);
 		document.getElementById("data").innerHTML = JSON.stringify(
 			customerCreated,
 			null,
 			2
+		);
+	}
+
+	if (customerContext.loggedIn) {
+		return (
+			<h1 className="gtext">{`Hi ${customerContext.firstName}, End of the month?`}</h1>
 		);
 	}
 

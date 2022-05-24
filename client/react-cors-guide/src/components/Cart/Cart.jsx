@@ -1,8 +1,10 @@
 import * as api from "../../API.js";
-import { useState } from "react";
 import { Container, Button } from "react-bootstrap";
+import { useState, useContext } from "react";
+import { UserContext } from "../../App";
 
 export default function Cart() {
+	const customerContext = useContext(UserContext);
 	return (
 		<>
 			{" "}
@@ -25,7 +27,7 @@ export default function Cart() {
 	);
 
 	async function showBasket() {
-		const items = await api.getBasket(15);
+		const items = await api.getBasket(customerContext.id);
 		document.getElementById("data").innerHTML = JSON.stringify(items, null, 2);
 	}
 	async function addItemToBasket() {

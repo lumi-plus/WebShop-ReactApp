@@ -57,7 +57,8 @@ export async function createCustomer(
 	customerId,
 	customerFistName,
 	customerLastName,
-	customerEmail
+	customerEmail,
+	customerBasket
 ) {
 	await fetch(`http://localhost:8080/customers`, {
 		mode: "cors",
@@ -72,7 +73,7 @@ export async function createCustomer(
 			customerFistName,
 			customerLastName,
 			customerEmail,
-			customerBasket: [],
+			customerBasket,
 		}),
 	});
 }

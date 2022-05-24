@@ -17,7 +17,7 @@ function App() {
 		secondName: "",
 		email: "",
 		loggedIn: false,
-		basket: [],
+		basket: [1, 1, 1],
 	});
 
 	return (
@@ -34,12 +34,7 @@ function App() {
 						<Route path="/product" element={<Product />} />
 						<Route
 							path="/login"
-							element={
-								<LoginPage
-									setRootCustomer={setCustomer}
-									customerId={customer.id}
-								/>
-							}
+							element={<LoginPage setRootCustomer={setCustomer} />}
 						/>
 						<Route path="/cart" element={<CartPage />} />
 					</Routes>
