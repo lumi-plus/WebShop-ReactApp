@@ -5,7 +5,7 @@ import * as api from "../API.js";
 
 //HomePage works and now is displaying nothing because data is not passing trough +
 // once data will be displayed we will need a list of items --> that's why the Items component is created for
-
+let read = false;
 export default function HomePage() {
 	const [data, setData] = useState();
 
@@ -13,19 +13,23 @@ export default function HomePage() {
 		let items = await api.getItems();
 		await setData(items);
 		console.log(items);
+		read = true;
 	};
 
 	useEffect(() => {
 		getItems();
 	}, []);
 
-	return (
-		<div className="main-container">
-			<div className="cards-container">
-				{data.map((item) => (
-					<Item key={item.itemId} item={item}></Item>
-				))}
+	if (read) {
+		return (
+			<div className="main-container">
+				<div className="cards-container">
+					{data.map((item) => (
+						<Item key={item.itemId} item={item}></Item>
+					))}
+				</div>
 			</div>
-		</div>
-	);
+		);
+	}
+	return <h1>Loading</h1>;
 }
