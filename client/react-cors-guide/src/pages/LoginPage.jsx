@@ -26,12 +26,12 @@ export default function LoginPage() {
 		event.preventDefault();
 		customer.loggedIn = true;
 		setCustomerGlobal(customer);
-		await createCustomer(customer);
+		await updateCustomer(customer);
 		console.log(customer);
 	}
 
-	async function createCustomer(customer) {
-		await api.createCustomer(customer);
+	async function updateCustomer(customer) {
+		await api.updateCustomer(customer);
 	}
 
 	if (customerGlobal.loggedIn) {

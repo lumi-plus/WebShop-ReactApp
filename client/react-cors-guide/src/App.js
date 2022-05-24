@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { useState, createContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import * as api from "./API.js";
 
 import CartPage from "./pages/CartPage";
@@ -20,15 +20,13 @@ function App() {
 		loggedIn: false,
 		basket: [1, 1, 1],
 	});
-
-	async function createCustomer({ customer }) {
-		await api.createCustomer(
-			customer.id,
-			customer.firstName,
-			customer.secondName,
-			customer.email,
-			customer.basket
-		);
+	useEffect(() => {
+		if (!customer.loggedIn) {
+			createCustomer(customer);
+		}
+	});
+	async function createCustomer(customer) {
+		await api.createCustomer(customer);
 	}
 
 	return (
