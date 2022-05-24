@@ -7,6 +7,9 @@ import CartPage from "./pages/CartPage";
 import LoginPage from "./pages/LoginPage";
 import Product from "./pages/TestPage/TestPageLinnea";
 import HomePage from "./pages/HomePage";
+import ManPage from "./pages/ManPage";
+import WomanPage from "./pages/WomanPage";
+import Sale from "./pages/Sale";
 import Navbar from "./components/Navbar/Navbar";
 import Herobanner from "./components/Herobanner/Herobanner";
 
@@ -50,8 +53,8 @@ function App() {
 					<Routes>
 						<Route path="/" element={<HomePage />} />
 						<Route path="/home" element={<HomePage />} />
-						<Route path="/man" element={<Man />} />
-						<Route path="/woman" element={<Woman />} />
+						<Route path="/man" element={<ManPage />} />
+						<Route path="/woman" element={<WomanPage />} />
 						<Route path="/sale" element={<Sale />} />
 						<Route path="/product" element={<Product />} />
 						<Route path="/login" element={<LoginPage />} />
@@ -73,9 +76,9 @@ function App() {
 		return <h2>Woman</h2>;
 	}
 
-	function Sale() {
-		return <Herobanner />;
-	}
+	// function Sale() {
+	// 	return <Herobanner />;
+	// }
 
 	function createId() {
 		return getRandomInt(0, 10000);
