@@ -10,6 +10,10 @@ export default function HomePage() {
 	const [data, setData] = useState();
 	const [read, setState] = useState(false);
 
+	useEffect(() => {
+		getItems();
+	}, []);
+
 	const getItems = async () => {
 		try {
 			let items = await api.getItems();
@@ -20,10 +24,6 @@ export default function HomePage() {
 			console.log(error);
 		}
 	};
-
-	useEffect(() => {
-		getItems();
-	}, []);
 
 	if (read) {
 		return (

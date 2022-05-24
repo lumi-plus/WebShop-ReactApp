@@ -65,7 +65,7 @@ function App() {
 	);
 
 	function createId() {
-		return getRandomInt(0, 10000000);
+		return getRandomInt(0, 1000000000000);
 	}
 
 	function getRandomInt(min, max) {

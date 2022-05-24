@@ -25,18 +25,20 @@ export async function getItem(itemId) {
 }
 
 export async function getItemsCategory(categoryId) {
-	const response = await fetch(`http://localhost:8080/categories/${categoryId}`, {
-		mode: "cors",
-		method: "GET",
-		headers: {
-			Accept: "application/json",
-			"Content-Type": "application/json",
-			"Access-Control-Allow-Origin": "*",
-		},
-	});
+	const response = await fetch(
+		`http://localhost:8080/categories/${categoryId}`,
+		{
+			mode: "cors",
+			method: "GET",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+				"Access-Control-Allow-Origin": "*",
+			},
+		}
+	);
 	return response.json();
 }
-
 
 export async function getBasket(customerId) {
 	const response = await fetch(
@@ -78,6 +80,22 @@ export async function deleteItemFromBasket(customerId, itemId, itemQuantity) {
 		},
 		body: JSON.stringify({ itemId, itemQuantity }),
 	});
+}
+
+export async function getCustomer(customerId) {
+	const response = await fetch(
+		`http://localhost:8080/customers/${customerId}`,
+		{
+			mode: "cors",
+			method: "GET",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+				"Access-Control-Allow-Origin": "*",
+			},
+		}
+	);
+	return response.json();
 }
 
 export async function createCustomer(customer) {

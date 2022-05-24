@@ -21,7 +21,11 @@ export default function Item(props) {
 				<Label>{item.itemOnSale} </Label>
 				<Link href={`/item/${item.itemId}`}></Link>
 
-				<Image src={item.itemIMG} alt={item.itemName} />
+				<Image
+					src={require("../../resources/images/WOMAN-3/3.1_woman.jpeg")}
+					// src={require(`"${item.itemId.itemIMG.img1}"`)}
+					alt={item.itemName}
+				/>
 				<Info>
 					<Title>{item.itemName}</Title>
 					<Price>{item.itemPrice}€</Price>
