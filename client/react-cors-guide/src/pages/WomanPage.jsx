@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../globalStyles.css";
 import Item from "../components/Item/Index";
 import * as api from "../API.js";
+import Loading from "../components/Loading/Loading";
 
 //HomePage works and now is displaying nothing because data is not passing trough +
 // once data will be displayed we will need a list of items --> that's why the Items component is created for
@@ -32,5 +33,5 @@ export default function WomanPage() {
 			</div>
 		);
 	}
-	return <h1>Loading</h1>;
+	return <Loading />;
 }
