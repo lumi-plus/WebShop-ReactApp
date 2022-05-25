@@ -11,7 +11,7 @@ const Test_Page = () => {
 	const id = queryParams.get("id");
 
 	console.log(id);
-	const [itemId, setItemId] = useState();
+	// const [itemId, setItemId] = useState();
 	// setItemId(id);   //!!!!!!!!!!!!!!!!
 
 	// useEffect(() => {
@@ -21,18 +21,16 @@ const Test_Page = () => {
 	return (
 		<div>
 			<Container>
-				{/* <Row styleClass="row">
-					<Col sm={7}>
-						<Carousel_Product itemId={itemId} />
+				<Row styleClass="row">
+					<Col sm={6}>
+						<Carousel_Product />
 					</Col>
-					<Col sm={5}>
+					<Col sm={6}>
 						<Row>
-							<h1>Helena</h1>
-							<h1>178€</h1>
-							<Product_Info_Card itemId={itemId} />
+							<Product_Info_Card />
 						</Row>
 					</Col>
-				</Row> */}
+				</Row>
 			</Container>
 		</div>
 	);

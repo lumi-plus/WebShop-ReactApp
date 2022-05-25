@@ -48,7 +48,7 @@ export default function Item(props) {
 				</Info>
 
 				<Label>{item.itemOnSale} </Label>
-				<Image src={item.itemIMG} alt={item.itemName} onClick={routeChange} />
+				<Image src={item.itemIMG1} alt={item.itemName} onClick={routeChange} />
 			</Card>
 		</Container>
 	);
