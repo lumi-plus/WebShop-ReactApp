@@ -1,30 +1,27 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 //.product-wrapper
 export const Container = styled.div`
-    margin-bottom:  20px;
-    height: 270px;
-    width: 250px; 
-    position: relative;
-    ;
+  margin-bottom: 20px;
+  height: 270px;
+  width: 250px;
+  position: relative; ;
 `;
 //.product
-export const Card = styled.div` 
-    box-shadow: 12px 24px 61%;
-    margin-left:  25px;
-    margin-top: 25px;
-    height: 250px;
-    width: 250px;
-    position: relative;
-    border-radius: 0.5rem;
-    
-    
-    &:hover {
-      
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-      
-    }`
-;
+export const Card = styled.div`
+  box-shadow: 12px 24px 61%;
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  border-radius: 0.5rem;
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+`;
 //with a link we want to change the default blue color, and seperation of space
 export const Link = styled.a`
 font-weight: 350;
@@ -36,12 +33,12 @@ position: absolute;
 
 `;
 
-  //btn-default in CSS/ prototype miniproject-1 
-  export const  Label = styled.div` 
+//btn-default in CSS/ prototype miniproject-1
+export const Label = styled.div`
   border-radius: 0;
-  background-color:red;
+  background-color: red;
   border-radius: 2px;
-  box-shadow: 0px 10px 10px #E0E0E0;
+  box-shadow: 0px 10px 10px #e0e0e0;
   z-index: 1;
   margin-left: 10px;
   margin-top: 10px;
@@ -50,11 +47,11 @@ position: absolute;
   font-size: 14px;
   font-weight: 900;
   position: absolute;
-  width: 25%; 
-  &:hover {transform: scale(1.10);
+  width: 25%;
+  &:hover {
+    transform: scale(1.1);
   }
-  `
-;
+`;
 
 //.header deleted
 export const Image = styled.img`
@@ -63,54 +60,42 @@ export const Image = styled.img`
       position: relative;
       border-radius: 0.5rem;
       
-      
-    }`
-     
-;
-
+    }`;
 
 //.footer changed into Info
-export const Info = styled.div` 
-    bottom: 10px;
-    position:absolute;
-    width: 100%;
-    justify-content: space-between;
-   `
-;
-  
+export const Info = styled.div`
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+`;
 
-//.brand-name in CSS/ prototype miniproject-1 
-export const Title = styled.span` 
-    width: 33%;
-    float: left;
-    padding: 20px 15px;
-    font-weight: 600;
-    font-size: medium;
-    font-family:'Lato', sans-serif ;
-    padding-bottom: 20px;
-   `
-;
+//.brand-name in CSS/ prototype miniproject-1
+export const Title = styled.span`
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 20px;
+`;
 
-
-export const  Price = styled.span` 
-    width: 33%;
-    float: left;
-    padding: 20px 15px; 
-    font-weight: 350;
-    font-size: medium;
-    font-family:'Lato', sans-serif ;
-    
-   `
-;
+export const Price = styled.span`
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+  font-weight: 350;
+  font-size: medium;
+  font-family: "Lato", sans-serif;
+`;
 
 export const IconContainer = styled.span`
-       align-self: center;
-       padding: 18px 15px; 
-       width: 33%;
-       float: left;
-       &:hover {transform: scale(1.25);
-       }
-      
-      `
-
-;
+  align-self: center;
+  padding: 18px 15px;
+  width: 33%;
+  float: left;
+  &:hover {
+    transform: scale(1.25);
+  }
+`;
