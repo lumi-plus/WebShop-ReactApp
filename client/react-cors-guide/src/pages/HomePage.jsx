@@ -10,16 +10,20 @@ export default function HomePage() {
 	const [data, setData] = useState();
 	const [read, setState] = useState(false);
 
-	const getItems = async () => {
-		let items = await api.getItems();
-		await setData(items);
-		console.log(items);
-		setState(true);
-	};
-
 	useEffect(() => {
 		getItems();
 	}, []);
+
+	const getItems = async () => {
+		try {
+			let items = await api.getItems();
+			await setData(items);
+			console.log(items);
+			setState(true);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
 	if (read) {
 		return (

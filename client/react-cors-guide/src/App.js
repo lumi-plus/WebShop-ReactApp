@@ -11,7 +11,7 @@ import ManPage from "./pages/ManPage";
 import WomanPage from "./pages/WomanPage";
 import Sale from "./pages/Sale";
 import Navbar from "./components/Navbar/Navbar";
-import Herobanner from "./components/Herobanner/Herobanner";
+import Salebanner from "./components/Salebanner/Salebanner";
 
 export const CustomerContext = createContext();
 function App() {
@@ -21,7 +21,20 @@ function App() {
 		lastName: "",
 		email: "",
 		loggedIn: false,
-		basket: [1, 1, 1],
+		basket: [
+			{
+				itemId: 15,
+				itemQuantity: 1,
+			},
+			{
+				itemId: 11,
+				itemQuantity: 7,
+			},
+			{
+				itemId: 20,
+				itemQuantity: 20,
+			},
+		],
 	});
 	useEffect(() => {
 		if (!customer.loggedIn) {
@@ -36,6 +49,7 @@ function App() {
 		<CustomerContext.Provider value={[customer, setCustomer]}>
 			<div className="App">
 				<BrowserRouter>
+					<Salebanner />
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<HomePage />} />
@@ -51,24 +65,9 @@ function App() {
 			</div>
 		</CustomerContext.Provider>
 	);
-	function Home() {
-		return <h2>Home</h2>;
-	}
-
-	function Man() {
-		return <h2>Man</h2>;
-	}
-
-	function Woman() {
-		return <h2>Woman</h2>;
-	}
-
-	// function Sale() {
-	// 	return <Herobanner />;
-	// }
 
 	function createId() {
-		return getRandomInt(0, 10000);
+		return getRandomInt(0, 1000000000000);
 	}
 
 	function getRandomInt(min, max) {

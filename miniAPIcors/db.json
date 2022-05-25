@@ -19,7 +19,7 @@
         },
         {
           "itemId": 1,
-          "itemQuantity": -6
+          "itemQuantity": 7
         }
       ]
     },
@@ -28,388 +28,6 @@
       "customerFistName": "John",
       "customerLastName": "Johnson",
       "customerBasket": []
-    },
-    {
-      "customerId": 7868,
-      "customerFistName": "Jone",
-      "customerLastName": "Jar",
-      "customerEmail": "Jar@xyz.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 1770,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 2307,
-      "customerFistName": "Denis",
-      "customerLastName": "Kolab",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 9393,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 1756,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 4522,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 2083,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 2886,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 5362,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 9283,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 7251,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 6590,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 4801,
-      "customerFistName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": []
-    },
-    {
-      "customerId": 7655,
-      "customerFistName": "Lukasz",
-      "customerLastName": "",
-      "customerEmail": "",
-      "customerBasket": []
-    },
-    {
-      "customerId": 5821,
-      "customerFistName": "Test Kolejny 2",
-      "customerLastName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 4403,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 7337,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8818,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8923,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 1541,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 1104,
-      "customerFirstName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 5755,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8166,
-      "customerFirstName": "Lukasz",
-      "customerLastName": "Migala",
-      "customerEmail": "lukasz.migala95@gmail.com",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 499,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 1919,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 5680,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 9430,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8466,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 6903,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 6393,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 2661,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 5951,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 4344,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 6835,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 6581,
-      "customerFirstName": "tomy",
-      "customerLastName": "lee",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 7869,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 5367,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 1630,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 1442,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8807,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 8130,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "customerId": 708,
-      "customerFirstName": "",
-      "customerEmail": "",
-      "customerBasket": [
-        1,
-        1,
-        1
-      ]
     }
   ],
   "items": [
@@ -421,19 +39,19 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-1/1.1_man.jpeg"
+          "img1": "../../resources/images/MAN-1/1.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-1/1.2_man.jpeg"
+          "img2": "../../resources/images/MAN-1/1.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-1/1.3_man.jpeg"
+          "img3": "../../resources/images/MAN-1/1.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-1/1.4_man.jpeg"
+          "img4": "../../resources/images/MAN-1/1.4_man.jpeg"
         }
       ],
-      "itemOnSale": "no"
+      "itemOnSale": ""
     },
     {
       "itemId": 12,
@@ -443,16 +61,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-2/2.1_man.jpeg"
+          "img1": "../../resources/images/MAN-2/2.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-2/2.2_man.jpeg"
+          "img2": "../../resources/images/MAN-2/2.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-2/2.3_man.jpeg"
+          "img3": "../../resources/images/MAN-2/2.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-2/2.4_man.jpeg"
+          "img4": "../../resources/images/MAN-2/2.4_man.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -465,16 +83,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-3/3.1_man.jpeg"
+          "img1": "../../resources/images/MAN-3/3.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-3/3.2_man.jpeg"
+          "img2": "../../resources/images/MAN-3/3.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-3/3.3_man.jpeg"
+          "img3": "../../resources/images/MAN-3/3.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-3/3.4_man.jpeg"
+          "img4": "../../resources/images/MAN-3/3.4_man.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -487,16 +105,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-4/4.1_man.jpeg"
+          "img2": "../../resources/images/MAN-4/4.1_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-4/4.2_man.jpeg"
+          "img3": "../../resources/images/MAN-4/4.2_man.jpeg"
         },
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-4/4.3_man.jpeg"
+          "img1": "../../resources/images/MAN-4/4.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-4/4.4_man.jpeg"
+          "img4": "../../resources/images/MAN-4/4.4_man.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -509,16 +127,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-5/5.1_man.jpeg"
+          "img1": "../../resources/images/WOMAN-3/3.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-5/5.2_man.jpeg"
+          "img2": "../../resources/images/MAN-5/5.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-5/5.3_man.jpeg"
+          "img3": "../../resources/images/MAN-5/5.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-5/5.4_man.jpeg"
+          "img4": "../../resources/images/MAN-5/5.4_man.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -531,16 +149,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-6/6.1_man.jpeg"
+          "img1": "../../resources/images/MAN-6/6.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-6/6.2_man.jpeg"
+          "img2": "../../resources/images/MAN-6/6.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-6/6.3_man.jpeg"
+          "img3": "../../resources/images/MAN-6/6.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-6/6.4_man.jpeg"
+          "img4": "../../resources/images/MAN-6/6.4_man.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -553,16 +171,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-7/7.1_man.jpeg"
+          "img1": "../../resources/images/MAN-7/7.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-7/7.1_man.jpeg"
+          "img2": "../../resources/images/MAN-7/7.1_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-7/7.1_man.jpeg"
+          "img3": "../../resources/images/MAN-7/7.1_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-7/7.1_man.jpeg"
+          "img4": "../../resources/images/MAN-7/7.1_man.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -575,16 +193,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-8/8.1_man.jpeg"
+          "img1": "../../resources/images/MAN-8/8.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-8/8.2_man.jpeg"
+          "img2": "../../resources/images/MAN-8/8.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-8/8.3_man.jpeg"
+          "img3": "../../resources/images/MAN-8/8.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-8/8.4_man.jpeg"
+          "img4": "../../resources/images/MAN-8/8.4_man.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -597,16 +215,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-9/9.1_man.jpeg"
+          "img1": "../../resources/images/MAN-9/9.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-9/9.2_man.jpeg"
+          "img2": "../../resources/images/MAN-9/9.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-9/9.3_man.jpeg"
+          "img3": "../../resources/images/MAN-9/9.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-9/9.4_man.jpeg"
+          "img4": "../../resources/images/MAN-9/9.4_man.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -619,16 +237,16 @@
       "itemCategory": 1,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/MAN-10/10.1_man.jpeg"
+          "img1": "../../resources/images/MAN-10/10.1_man.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/MAN-10/10.2_man.jpeg"
+          "img2": "../../resources/images/MAN-10/10.2_man.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/MAN-10/10.3_man.jpeg"
+          "img3": "../../resources/images/MAN-10/10.3_man.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/MAN-10/10.4_man.jpeg"
+          "img4": "../../resources/images/MAN-10/10.4_man.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -641,16 +259,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-1/1.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-1/1.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-1/1.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-1/1.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-1/1.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-1/1.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-1/1.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-1/1.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -663,16 +281,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-2/2.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-2/2.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-2/2.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-2/2.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-2/2.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-2/2.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-2/2.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-2/2.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -685,16 +303,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-3/3.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-3/3.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-3/3.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-3/3.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-3/3.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-3/3.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-3/3.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-3/3.4_woman.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -707,16 +325,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-4/4.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-4/4.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-4/4.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-4/4.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-4/4.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-4/4.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-4/4.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-4/4.4_woman.jpeg"
         }
       ],
       "itemOnSale": "yes"
@@ -729,16 +347,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-5/5.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-5/5.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-5/5.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-5/5.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-5/5.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-5/5.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-5/5.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-5/5.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -751,16 +369,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-6/6.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-6/6.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-6/6.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-6/6.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-6/6.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-6/6.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-6/6.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-6/6.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -773,16 +391,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-7/7.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-7/7.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-7/7.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-7/7.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-7/7.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-7/7.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-7/7.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-7/7.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -795,16 +413,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-8/8.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-8/8.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-8/8.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-8/8.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-8/8.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-8/8.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-8/8.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-8/8.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -817,16 +435,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-9/9.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-9/9.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-9/9.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-9/9.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-9/9.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-9/9.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-9/9.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-9/9.4_woman.jpeg"
         }
       ],
       "itemOnSale": "no"
@@ -839,16 +457,16 @@
       "itemCategory": 2,
       "itemIMG": [
         {
-          "img1": "../client/react-cors-guide/src/ressources/images/WOMAN-10/10.1_woman.jpeg"
+          "img1": "../../resources/images/WOMAN-10/10.1_woman.jpeg"
         },
         {
-          "img2": "../client/react-cors-guide/src/ressources/images/WOMAN-10/10.2_woman.jpeg"
+          "img2": "../../resources/images/WOMAN-10/10.2_woman.jpeg"
         },
         {
-          "img3": "../client/react-cors-guide/src/ressources/images/WOMAN-10/10.3_woman.jpeg"
+          "img3": "../../resources/images/WOMAN-10/10.3_woman.jpeg"
         },
         {
-          "img4": "../client/react-cors-guide/src/ressources/images/WOMAN-10/10.4_woman.jpeg"
+          "img4": "../../resources/images/WOMAN-10/10.4_woman.jpeg"
         }
       ],
       "itemOnSale": "yes"

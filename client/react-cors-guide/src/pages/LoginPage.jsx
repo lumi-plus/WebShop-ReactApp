@@ -1,9 +1,8 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import { useState, useContext, useEffect } from "react";
 import { CustomerContext } from "../App";
 import * as api from "../API.js";
-import { Route } from "react-router-dom";
-import HomePage from "./HomePage";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
@@ -36,7 +35,19 @@ export default function LoginPage() {
 		await api.updateCustomer(customer);
 	}
 
-	if (customerGlobal.loggedIn) {
+	function HomeButton() {
+		let navigate = useNavigate();
+		function handleClick() {
+			navigate("/home");
+		}
+		return (
+			<Button variant="outline-danger" onClick={handleClick}>
+				Cancel
+			</Button>
+		);
+	}
+
+	if (customerGlobal.loggedIn && customerGlobal.firstName) {
 		return (
 			<h1 className="gtext">{`Hi ${customerGlobal.firstName}, End of the month?`}</h1>
 		);
@@ -81,9 +92,17 @@ export default function LoginPage() {
 					/>
 				</Form.Group>
 				<Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
-				<Button variant="warning" type="submit" onClick={handleSubmit}>
-					Submit
-				</Button>
+
+				<Row style={{ display: "flex" }}>
+					<Col className="align-content-center">
+						<Button variant="warning" type="submit" onClick={handleSubmit}>
+							Submit
+						</Button>
+					</Col>
+					<Col className="align-content-right">
+						<HomeButton />
+					</Col>
+				</Row>
 			</Form>
 		</div>
 	);
