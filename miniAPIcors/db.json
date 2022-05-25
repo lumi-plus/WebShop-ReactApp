@@ -54,6 +54,216 @@
           "itemQuantity": 20
         }
       ]
+    },
+    {
+      "customerId": 784784436503,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 646534833792,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 721176328165,
+      "customerFirstName": "Lukasz",
+      "customerLastName": "Migala",
+      "customerEmail": "lukasz.migala95@gmail.com",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 898269673330,
+      "customerFirstName": "Kamil",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 303086648620,
+      "customerFirstName": "Doris",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 546244204996,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 54956454468,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 78466380211,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 27441504435,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 285970651827,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 395378161640,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
     }
   ],
   "items": [

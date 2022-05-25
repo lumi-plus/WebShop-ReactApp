@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../globalStyles.css";
 import Item from "../components/Item/Index";
+import Herobanner from "../components/Herobanner/Herobanner";
 import * as api from "../API.js";
 
 //HomePage works and now is displaying nothing because data is not passing trough +
@@ -23,14 +24,15 @@ export default function Sale() {
 
 	if (read) {
 		return (
-			<div className="main-container">
-				<div className="cards-container">
-					{data.map((item) => {if (item.itemOnSale=="yes") return( 
-						<Item key={item.itemId} item={item}></Item>
-					)
-                    })
-                    
-                    }
+			<div>
+				<Herobanner />
+				<div className="main-container">
+					<div className="cards-container">
+						{data.map((item) => {
+							if (item.itemOnSale == "yes")
+								return <Item key={item.itemId} item={item}></Item>;
+						})}
+					</div>
 				</div>
 			</div>
 		);

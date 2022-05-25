@@ -11,6 +11,7 @@ import ManPage from "./pages/ManPage";
 import WomanPage from "./pages/WomanPage";
 import Sale from "./pages/Sale";
 import Navbar from "./components/Navbar/Navbar";
+import Salebanner from "./components/Salebanner/Salebanner";
 
 export const CustomerContext = createContext();
 function App() {
@@ -48,6 +49,7 @@ function App() {
 		<CustomerContext.Provider value={[customer, setCustomer]}>
 			<div className="App">
 				<BrowserRouter>
+					<Salebanner />
 					<Navbar />
 					<Routes>
 						<Route path="/" element={<HomePage />} />
