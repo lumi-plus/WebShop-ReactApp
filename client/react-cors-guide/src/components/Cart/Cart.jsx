@@ -71,31 +71,24 @@ export default function Cart() {
 		<>
 			<div>
 				<Container>
-					<div id="data">React Cors Guideee</div>
 					{/* <Button variant="outline-secondary" onClick={getBasket}>
 						Show basket
 					</Button> */}
 
-					{/* {customerGlobal.basket?.map((item, i) => (
+					{customerGlobal.basket?.map((item, i) => (
 						<div key={i}>
 							<span>
 								itemID: {item.itemId} , ItemQuantity: {item.itemQuantity}&nbsp;
 								&nbsp;
-								<Button
-									variant="outline-warning"
-									onClick={addItemToBasket(item.itemId)}
-								>
+								<Button variant="outline-warning" onClick={addItemToBasket}>
 									Add item
 								</Button>
-								<Button
-									variant="outline-danger"
-									onClick={deleteItemFromBasket(item.itemId)}
-								>
+								<Button variant="outline-danger" onClick={deleteItemFromBasket}>
 									Delete item
 								</Button>
 							</span>
 						</div>
-					))} */}
+					))}
 				</Container>
 			</div>
 		</>
