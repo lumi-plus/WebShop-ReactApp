@@ -79,7 +79,9 @@ export async function updateBasket(customerId, newOrder) {
     if (customerArray[index].customerBasket[newIndex].itemQuantity < 1){
       removeItemBasket(customerId,newOrder.itemId);
     }
+    else{
     await save(customerArray);
+    }
   }
   else {
     customerArray[index].customerBasket.push(newOrder);

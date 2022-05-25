@@ -59,6 +59,7 @@ export const Image = styled.img`
       width: 100%;
       position: relative;
       border-radius: 0.5rem;
+      index: '1'
       
     }`;
 
@@ -68,6 +69,7 @@ export const Info = styled.div`
   position: absolute;
   width: 100%;
   justify-content: space-between;
+  index: '2'
 `;
 
 //.brand-name in CSS/ prototype miniproject-1

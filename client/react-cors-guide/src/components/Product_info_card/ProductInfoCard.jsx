@@ -35,7 +35,8 @@ const Product_Info_Card = ({ id }) => {
         </Card.Text>
         <Size_Filter />
         <Button_Counter />
-        <Button onClick={addToBasket}>Add to basked button</Button>
+        <Button onClick={addToBasket}>Add to basket</Button>
+        <Button onClick={removeFromBasket}>Remove from basket </Button>
       </Card.Body>
     </Card>
   );

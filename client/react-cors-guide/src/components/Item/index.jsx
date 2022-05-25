@@ -21,16 +21,28 @@ export default function Item(props) {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
 	const customerid = customerGlobal.customerId;
 	const itemid = item.itemId;
-	const [basket, addToBasket] = useState(
-		api.addItemToBasket(customerid, itemid, 1).then((p) => addToBasket(p))
-	);
+	// const [basket, addToBasket] = useState(
+	// 	api.addItemToBasket(customerid, itemid, 1).then((p) => addToBasket(p))
+	// );
+
+
+	async function addToBasket() {
+	  await api.addItemToBasket(customerGlobal.id,item.itemId,1);
+	  }
+  
+	// async function removeFromBasket() {
+	//   await api.addItemToBasket(customerGlobal.id,product.itemId,-1);
+	//   }
+  
 
 	let navigate = useNavigate();
 	const routeChange = () => {
+	
 		let path = `/product/?id=${item.itemId}`;
 		navigate(path);
 	};
 	const routeChange2 = () => {
+		addToBasket();
 		let path = `/cart`;
 		navigate(path);
 	};
