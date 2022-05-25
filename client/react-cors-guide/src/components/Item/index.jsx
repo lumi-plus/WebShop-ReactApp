@@ -1,4 +1,7 @@
 import React from "react";
+import { useState, useContext, useEffect } from "react";
+import { CustomerContext } from "../../App";
+import * as api from "../../API.js";
 import {
 	Container,
 	Card,
@@ -14,6 +17,10 @@ import * as Icon from "react-bootstrap-icons";
 
 export default function Item(props) {
 	const { item } = props;
+	    const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
+	const customerid= customerGlobal.customerId;
+	const itemid = item.itemId;
+	const [basket,addToBasket] = useState(api.addItemToBasket(customerid,itemid,1).then(p => addToBasket(p)));
 
 	return (
 		<Container>
