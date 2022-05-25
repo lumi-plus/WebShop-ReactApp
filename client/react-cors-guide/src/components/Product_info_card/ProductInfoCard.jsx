@@ -5,10 +5,10 @@ import Size_Filter from "../SizeFilter/SizeFilter";
 import Button_Counter from "../Button_Counter/Button_Counter";
 import * as api from "../../API.js";
 
-const Product_Info_Card = () => {
-	const [product, setProduct] = useState(
-		api.getItem(20).then((p) => setProduct(p))
-	);
+const Product_Info_Card = ({ itemId }) => {
+	const [product, setProduct] = useState();
+
+	api.getItem(itemId).then((p) => setProduct(p));
 
 	// const [inputValueQuantity, setInputQuantity] = useState('');
 	// const [inputValueSize, setInputSize] = useState('');

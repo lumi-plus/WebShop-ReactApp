@@ -28,6 +28,749 @@
       "customerFistName": "John",
       "customerLastName": "Johnson",
       "customerBasket": []
+    },
+    {
+      "customerId": 875357996303,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 416415775881,
+      "customerFirstName": "Lukasz",
+      "customerLastName": "Migala",
+      "customerEmail": "lukasz.migala95@gmail.com",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 307355940320,
+      "customerFirstName": "Lukasz",
+      "customerLastName": "Migala",
+      "customerEmail": "lukasz.migala95@gmail.com",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 59987638366,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 176800309916,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 131772021881,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 572359916986,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 551852932326,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 875665013168,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 719128264846,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 426465414337,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 755293060291,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 741907249102,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 456812020244,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 668498473322,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 195919167117,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 822018513305,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 222218108410,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 890207768821,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 356719341052,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 556342946119,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 603674882910,
+      "customerFirstName": "jAN",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 108084034651,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 943047207240,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 595036831449,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 966932666245,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 10,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 1,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 100,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 487088305672,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 382207505389,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 388864749461,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 963782189856,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 843238361147,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 257845729190,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 681977622728,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 290691123594,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 418707545221,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
+    },
+    {
+      "customerId": 805076486770,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 15,
+          "itemQuantity": 1
+        },
+        {
+          "itemId": 11,
+          "itemQuantity": 7
+        },
+        {
+          "itemId": 20,
+          "itemQuantity": 20
+        }
+      ]
     }
   ],
   "items": [
@@ -73,7 +816,7 @@
           "img4": "../../resources/images/MAN-2/2.4_man.jpeg"
         }
       ],
-      "itemOnSale": "no"
+      "itemOnSale": "sale"
     },
     {
       "itemId": 13,
