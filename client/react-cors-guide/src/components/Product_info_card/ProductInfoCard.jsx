@@ -1,21 +1,26 @@
-import React, { render, useState } from "react";
+import React, { render, useState,useContext } from "react";
 import "./ProductInfoCard.css";
 import { Container, Row, Col, Grid, Card, Button } from "react-bootstrap";
 import Size_Filter from "../SizeFilter/SizeFilter";
 import Button_Counter from "../Button_Counter/Button_Counter";
 import * as api from "../../API.js";
+import { CustomerContext } from "../../App";
+
 
 const Product_Info_Card = ({ id }) => {
   const [product, setProduct] = useState(
     api.getItem(id).then((p) => setProduct(p))
   );
+  const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
 
-  // const [inputValueQuantity, setInputQuantity] = useState('');
-  // const [inputValueSize, setInputSize] = useState('');
+  async function addToBasket() {
+    await api.addItemToBasket(customerGlobal.id,product.itemId,1);
+	}
 
-  //const ides = item.itemDescription;
+  async function removeFromBasket() {
+    await api.addItemToBasket(customerGlobal.id,product.itemId,-1);
+	}
 
-  // const item = api.getItem(20);
 
   return (
     <Card className="product_card">
@@ -30,7 +35,7 @@ const Product_Info_Card = ({ id }) => {
         </Card.Text>
         <Size_Filter />
         <Button_Counter />
-        <Button>Add to basked button</Button>
+        <Button onClick={addToBasket}>Add to basked button</Button>
       </Card.Body>
     </Card>
   );

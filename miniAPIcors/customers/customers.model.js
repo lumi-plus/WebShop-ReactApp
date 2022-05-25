@@ -76,6 +76,9 @@ export async function updateBasket(customerId, newOrder) {
   {
     let newIndex = customerArray[index].customerBasket.findIndex(item => item.itemId === newOrder.itemId);
     customerArray[index].customerBasket[newIndex].itemQuantity += newOrder.itemQuantity;
+    if (customerArray[index].customerBasket[newIndex].itemQuantity < 1){
+      removeItemBasket(customerId,newOrder.itemId);
+    }
     await save(customerArray);
   }
   else {
