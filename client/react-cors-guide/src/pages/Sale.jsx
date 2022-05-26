@@ -30,7 +30,7 @@ export default function Sale() {
 				<div className="main-container">
 					<div className="cards-container">
 						{data.map((item) => {
-							if (item.itemOnSale == "yes")
+							if (item.itemOnSale == "SALE")
 								return <Item key={item.itemId} item={item}></Item>;
 						})}
 					</div>

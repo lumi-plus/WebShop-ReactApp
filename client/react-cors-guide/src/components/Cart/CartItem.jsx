@@ -2,6 +2,13 @@ import * as api from "../../API.js";
 import { Container, Button } from "react-bootstrap";
 import { useState, useContext, useEffect } from "react";
 import { CustomerContext } from "../../App";
+import "./style.jsx";
+import { Top, TopButton,
+	SectionHeader,ProductDetail, TitleCart, 
+	CartRow, Total, Text, CartColumn,
+ProductName, PriceDetail,ProductAmountContainer,
+ProductAmount,ProductColor, ProductSize, ProductId} from "./style"
+import "../../globalStyles.css"
 
 //cartitem får et id fra cart
 
@@ -25,6 +32,10 @@ export default function CartItem (props){
         };
 
     return(
-        <div> {product.itemName} , {product.itemPrice}</div>
+
+        
+
+        <div> {product.itemName}, {product.itemPrice}€, {item.itemQuantity}</div>
+  
     )
 }
