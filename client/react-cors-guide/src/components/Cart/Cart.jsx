@@ -6,17 +6,30 @@ import CartItem from "./CartItem.jsx";
 
 export default function Cart() {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
-	const [products, setBasket] = useState(api.getBasket(customerGlobal.id).then(p => setBasket(p)));
-
+	// const [products, setBasket] = useState(api.getBasket(customerGlobal.id).then(p => setBasket(p)));
+	const [products, setBasket] = useState([]);
+	useEffect(() => {
+		  fetchData();
+		}, []);
+  
+		const fetchData = () => {
+		api.getBasket(customerGlobal.id).then((p) => setBasket(p))
+			.catch((error) => {
+			  console.log(error);
+			});
+		};
 
 		async function addToBasket(idd) {
 			await api.addItemToBasket(customerGlobal.id,idd,1);
 			setCustomerGlobal(customerGlobal);
+			fetchData();
+
 			}
 		
 		  async function removeFromBasket(idd) {
 			await api.addItemToBasket(customerGlobal.id,idd,-1);
 			setCustomerGlobal(customerGlobal);
+			fetchData();
 			}
 		
 	

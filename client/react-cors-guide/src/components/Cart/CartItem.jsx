@@ -10,7 +10,19 @@ export default function CartItem (props){
     const itemId = item.itemId;
 
 
-    const [product,setProductInfo] = useState(api.getItem(itemId).then((p) => setProductInfo(p)));
+
+
+    const [product, setProduct] = useState([]);
+    useEffect(() => {
+          fetchData();
+        }, []);
+  
+        const fetchData = () => {
+        api.getItem(itemId).then((p) => setProduct(p))
+            .catch((error) => {
+              console.log(error);
+            });
+        };
 
     return(
         <div> {product.itemName} , {product.itemPrice}</div>

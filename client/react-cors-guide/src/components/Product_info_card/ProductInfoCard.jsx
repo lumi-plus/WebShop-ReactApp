@@ -1,4 +1,4 @@
-import React, { render, useState,useContext } from "react";
+import React, { render, useState,useContext,useEffect } from "react";
 import "./ProductInfoCard.css";
 import { Container, Row, Col, Grid, Card, Button } from "react-bootstrap";
 import Size_Filter from "../SizeFilter/SizeFilter";
@@ -7,19 +7,26 @@ import * as api from "../../API.js";
 import { CustomerContext } from "../../App";
 
 
-const Product_Info_Card = ({ id }) => {
-  const [product, setProduct] = useState(
-    api.getItem(id).then((p) => setProduct(p))
-  );
+const Product_Info_Card = ({ product}) => {
   const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
 
   async function addToBasket() {
-    await api.addItemToBasket(customerGlobal.id,product.itemId,1);
+
+    await api.addItemToBasket(customerGlobal.id,product.itemId,count);
 	}
 
-  async function removeFromBasket() {
-    await api.addItemToBasket(customerGlobal.id,product.itemId,-1);
-	}
+  const [count, setCount] = useState(1);
+
+  const handleIncrement = (event) => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = (event) => {
+    if (count>1){
+    setCount(count - 1);
+    }
+  };
+
 
 
   return (
@@ -34,9 +41,14 @@ const Product_Info_Card = ({ id }) => {
           <b>Color: </b> {product.itemColor}{" "}
         </Card.Text>
         <Size_Filter />
-        <Button_Counter />
+        {/* <Button_Counter /> */}
+        <div>
+      <Button onClick={handleDecrement}>-</Button>
+      {count}
+      <Button onClick={handleIncrement}>+</Button>
+    </div>
         <Button onClick={addToBasket}>Add to basket</Button>
-        <Button onClick={removeFromBasket}>Remove from basket </Button>
+        {/* <Button onClick={removeFromBasket}>Remove from basket </Button> */}
       </Card.Body>
     </Card>
   );
