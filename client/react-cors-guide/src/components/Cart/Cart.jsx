@@ -5,14 +5,27 @@ import { CustomerContext } from "../../App";
 import CartItem from "./CartItem.jsx";
 import "./style.jsx";
 
-import { Top, TopButton,
-	SectionHeader,ProductDetail, TitleCart, 
-	CartRow, Total, Text, CartColumn,
-ProductName, PriceDetail,ProductAmountContainer,
-ProductAmount,ProductColor, ProductSize, ProductId} from "./style"
-import "../../globalStyles.css"
+import {
+	Top,
+	TopButton,
+	SectionHeader,
+	ProductDetail,
+	TitleCart,
+	CartRow,
+	Total,
+	Text,
+	CartColumn,
+	ProductName,
+	PriceDetail,
+	ProductAmountContainer,
+	ProductAmount,
+	ProductColor,
+	ProductSize,
+	ProductId,
+} from "./style";
+import "../../globalStyles.css";
 
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 export default function Cart() {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
@@ -20,65 +33,71 @@ export default function Cart() {
 	const [products, setBasket] = useState([]);
 	const [totalItemCount, setTotalItemCount] = useState([]);
 	useEffect(() => {
-		  fetchData();
-		}, []);
-	
-		const fetchData = () => {
-		api.getBasket(customerGlobal.id).then((p) => setBasket(p)).then()
+		fetchData();
+	}, []);
+
+	const fetchData = () => {
+		api
+			.getBasket(customerGlobal.id)
+			.then((p) => setBasket(p))
+			.then()
 			.catch((error) => {
-			  console.log(error);
+				console.log(error);
 			});
+	};
 
-		};
+	async function addToBasket(idd) {
+		await api.addItemToBasket(customerGlobal.id, idd, 1);
+		// calculateTotal();
+		fetchData();
+	}
 
-	
-		async function addToBasket(idd) {
-			await api.addItemToBasket(customerGlobal.id,idd,1);
-			calculateTotal();
-			fetchData();
+	async function removeFromBasket(idd) {
+		await api.addItemToBasket(customerGlobal.id, idd, -1);
+		// calculateTotal();
+		// setTotalItemCount(calculateTotal());
+		fetchData();
+	}
 
-			}
-		
-		  async function removeFromBasket(idd) {
-			await api.addItemToBasket(customerGlobal.id,idd,-1);
-			calculateTotal();
-			// setTotalItemCount(calculateTotal());
-			fetchData();
-			}
+	const handleClickOpen = (event) => {
+		//setOpen(true);
+		swal(
+			"Congratulations!",
+			"Your order has been successfully realized!\nThank you for shopping with us!"
+		);
+	};
 
+	//   const calculateTotal = () => {
+	// 	const totalItem = Array.from(products)?.reduce((total, item) => {
+	// 		return total + item.itemQuantity;
+	// 	}, 0);
 
-			const handleClickOpen = (event) => {
-				//setOpen(true);
-				swal( "Congratulations!" ,"Your order has been successfully realized!\nThank you for shopping with us!");
-			  };
-		
-
-	
-
-			  const calculateTotal = () => {
-				const totalItem = Array.from(products)?.reduce((total, item) => {
-					return total + item.itemQuantity;
-				}, 0);
-		
-				setTotalItemCount(totalItem);
-			};
-		
-		
-
+	// 	setTotalItemCount(totalItem);
+	// };
 
 	return (
 		<>
 			<div>
 				<Container>
-				<CartRow><Top><TopButton>BACK TO SHOP</TopButton></Top></CartRow>
-				<SectionHeader><TitleCart>CART</TitleCart></SectionHeader>
-				
-				
-				
-				<ProductName><Text>ITEM</Text></ProductName>
-				<ProductName><Text>PRICE</Text></ProductName>
-				<ProductName><Text>QUANTITY</Text></ProductName>
-				
+					<CartRow>
+						<Top>
+							<TopButton>BACK TO SHOP</TopButton>
+						</Top>
+					</CartRow>
+					<SectionHeader>
+						<TitleCart>CART</TitleCart>
+					</SectionHeader>
+
+					<ProductName>
+						<Text>ITEM</Text>
+					</ProductName>
+					<ProductName>
+						<Text>PRICE</Text>
+					</ProductName>
+					<ProductName>
+						<Text>QUANTITY</Text>
+					</ProductName>
+
 					{/* <Button variant="outline-secondary" onClick={getBasket}>
 						Show basket
 					</Button> */}
@@ -86,39 +105,54 @@ export default function Cart() {
 					{Array.from(products)?.map((item, i) => (
 						<div key={i}>
 							<span>
-							<CartColumn><Text><b>Product:</b>SHOES</Text>	<ProductDetail>
-								{/* itemID: {item.itemId} , ItemQuantity: {item.itemQuantity}&nbsp;
+								<CartColumn>
+									<Text>
+										<b>Product:</b>SHOES
+									</Text>{" "}
+									<ProductDetail>
+										{/* itemID: {item.itemId} , ItemQuantity: {item.itemQuantity}&nbsp;
 								&nbsp; info: */}
-								<CartItem key={item.itemId} item={item}></CartItem>
-								
-							
-								<Button className="removeBtn"  onClick={()=>removeFromBasket(item.itemId)}>
-									-
-								</Button>
-								<ProductAmount>{item.itemQuantity}</ProductAmount>
-								<Button className="addBtn"  onClick={()=>addToBasket(item.itemId)}>
-									+
-								</Button>
-								</ProductDetail>
+										<CartItem key={item.itemId} item={item}></CartItem>
+
+										<Button
+											className="removeBtn"
+											onClick={() => removeFromBasket(item.itemId)}
+										>
+											-
+										</Button>
+										<ProductAmount>{item.itemQuantity}</ProductAmount>
+										<Button
+											className="addBtn"
+											onClick={() => addToBasket(item.itemId)}
+										>
+											+
+										</Button>
+									</ProductDetail>
 								</CartColumn>
 
-								<CartRow>
-			
-								</CartRow>
-
-								
+								<CartRow></CartRow>
 							</span>
 						</div>
 					))}
-				<Total><PriceDetail><Text>$Total</Text></PriceDetail></Total>
-				<Total><PriceDetail><Text>Ammount of items: {totalItemCount}   </Text></PriceDetail></Total>
-				<PriceDetail><Text>$0</Text></PriceDetail>
-				
-			
-				
-				<CartColumn/>
+					<Total>
+						<PriceDetail>
+							<Text>$Total</Text>
+						</PriceDetail>
+					</Total>
+					<Total>
+						<PriceDetail>
+							<Text>Ammount of items: {totalItemCount} </Text>
+						</PriceDetail>
+					</Total>
+					<PriceDetail>
+						<Text>$0</Text>
+					</PriceDetail>
+
+					<CartColumn />
 				</Container>
-				<Button className="purchaseBtn" onClick={handleClickOpen}>CHECKOUT</Button>
+				<Button className="purchaseBtn" onClick={handleClickOpen}>
+					CHECKOUT
+				</Button>
 			</div>
 		</>
 	);

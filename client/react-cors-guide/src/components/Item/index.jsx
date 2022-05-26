@@ -42,8 +42,6 @@ export default function Item(props) {
 		navigate(path);
 	};
 
-	
-
 	return (
 		<Container>
 			<Card>
