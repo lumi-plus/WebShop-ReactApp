@@ -5,7 +5,7 @@ import * as api from "./API.js";
 
 import CartPage from "./pages/CartPage";
 import LoginPage from "./pages/LoginPage";
-import Product from "./pages/TestPage/TestPageLinnea";
+import Product from "./pages/ProductPage/ProductPage";
 import HomePage from "./pages/HomePage";
 import ManPage from "./pages/ManPage";
 import WomanPage from "./pages/WomanPage";
