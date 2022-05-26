@@ -12,8 +12,28 @@ export default function LoginPage() {
 		lastName: "",
 		email: "",
 		loggedIn: customerGlobal.loggedIn,
-		basket: customerGlobal.basket,
+		basket: [],
 	});
+
+	useEffect(() => {
+		fetchData();
+	}, []);
+
+	const fetchData = () => {
+		api
+			.getBasket(customerGlobal.id)
+			.then((p) => updateBasket(p))
+			.catch((error) => {
+				console.log(error);
+			});
+	};
+
+	function updateBasket(basketUpdate) {
+		setCustomer((currState) => ({
+			...currState,
+			basket: basketUpdate,
+		}));
+	}
 
 	function handleChange(event) {
 		setCustomer({
@@ -26,7 +46,8 @@ export default function LoginPage() {
 	async function handleSubmit(event) {
 		event.preventDefault();
 		customer.loggedIn = true;
-		setCustomerGlobal(customer);
+		updateBasket();
+		await setCustomerGlobal(customer);
 		await updateCustomer(customer);
 		console.log(customer);
 	}
