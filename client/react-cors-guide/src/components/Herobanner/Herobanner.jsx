@@ -1,11 +1,18 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import { Button, Col, Row, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Herobanner.css";
 import heroimage from "../../resources/images/Index_hero/shoe_vector.png";
 import UserGreetings from "../UserGreetings/UserGreetings";
 
 export default function Herobanner() {
+	let navigate = useNavigate();
+	const routeChange = () => {
+		let path = `/sale`;
+		navigate(path);
+	};
+
 	return (
 		<Container className="container_hero">
 			<Row className="hero-banner_row">
@@ -22,6 +29,7 @@ export default function Herobanner() {
 							size="lg, sm, xl"
 							color="black"
 							className="hero-banner btn"
+							onClick={routeChange}
 						>
 							Shop Sale Now!
 						</Button>

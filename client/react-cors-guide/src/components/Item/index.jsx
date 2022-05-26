@@ -45,6 +45,8 @@ export default function Item(props) {
 	return (
 		<Container>
 			<Card>
+				<Label>{item.itemOnSale} </Label>
+				<Image src={item.itemIMG1} alt={item.itemName} onClick={routeChange} />
 				<Info>
 					<Title>{item.itemName}</Title>
 					<Price>{item.itemPrice}€</Price>
@@ -53,9 +55,6 @@ export default function Item(props) {
 						<Icon.CartFill />
 					</IconContainer>
 				</Info>
-
-				<Label>{item.itemOnSale} </Label>
-				<Image src={item.itemIMG1} alt={item.itemName} onClick={routeChange} />
 			</Card>
 		</Container>
 	);

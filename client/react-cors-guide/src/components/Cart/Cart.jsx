@@ -48,13 +48,13 @@ export default function Cart() {
 
 	async function addToBasket(idd) {
 		await api.addItemToBasket(customerGlobal.id, idd, 1);
-		// calculateTotal();
+		calculateTotal();
 		fetchData();
 	}
 
 	async function removeFromBasket(idd) {
 		await api.addItemToBasket(customerGlobal.id, idd, -1);
-		// calculateTotal();
+		calculateTotal();
 		// setTotalItemCount(calculateTotal());
 		fetchData();
 	}
@@ -67,13 +67,13 @@ export default function Cart() {
 		);
 	};
 
-	//   const calculateTotal = () => {
-	// 	const totalItem = Array.from(products)?.reduce((total, item) => {
-	// 		return total + item.itemQuantity;
-	// 	}, 0);
+	const calculateTotal = () => {
+		const totalItem = Array.from(products)?.reduce((total, item) => {
+			return total + item.itemQuantity;
+		}, 0);
 
-	// 	setTotalItemCount(totalItem);
-	// };
+		setTotalItemCount(totalItem);
+	};
 
 	return (
 		<>
@@ -134,19 +134,16 @@ export default function Cart() {
 							</span>
 						</div>
 					))}
+
 					<Total>
 						<PriceDetail>
-							<Text>$Total</Text>
+							<Text>
+								Ammount of items: {totalItemCount} <br />
+								(note: Ammount only works if quantity-buttons are clicked, and
+								the ammout deviates by one )
+							</Text>
 						</PriceDetail>
 					</Total>
-					<Total>
-						<PriceDetail>
-							<Text>Ammount of items: {totalItemCount} </Text>
-						</PriceDetail>
-					</Total>
-					<PriceDetail>
-						<Text>$0</Text>
-					</PriceDetail>
 
 					<CartColumn />
 				</Container>

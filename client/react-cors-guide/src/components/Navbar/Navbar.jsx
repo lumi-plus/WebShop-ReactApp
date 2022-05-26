@@ -24,25 +24,6 @@ export default function NavbarComponent() {
 									<Nav.Link>Woman</Nav.Link>
 								</LinkContainer>
 
-								<NavDropdown title="More" id="collasible-nav-dropdown">
-									<LinkContainer to="#action/3.1">
-										<NavDropdown.Item>First filter</NavDropdown.Item>
-									</LinkContainer>
-									<LinkContainer to="#action/3.2">
-										<NavDropdown.Item href="#action/3.2">
-											Another filter
-										</NavDropdown.Item>
-									</LinkContainer>
-									<LinkContainer to="#action/3.3">
-										<NavDropdown.Item href="#action/3.3">
-											Something
-										</NavDropdown.Item>
-									</LinkContainer>
-									<NavDropdown.Divider />
-									<LinkContainer to="#action/3.4">
-										<NavDropdown.Item>Separated link</NavDropdown.Item>
-									</LinkContainer>
-								</NavDropdown>
 								<LinkContainer to="/sale">
 									<Nav.Link className="text-warning">Sale</Nav.Link>
 								</LinkContainer>
