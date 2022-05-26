@@ -21,7 +21,8 @@ function App() {
 		lastName: "",
 		email: "",
 		loggedIn: false,
-		basket: [],
+		basket: {total:0,
+			items:[]},
 	});
 	useEffect(() => {
 		if (!customer.loggedIn) {

@@ -10,7 +10,7 @@ export default function Herobanner() {
 		<Container className="container_hero">
 			<Row className="hero-banner_row">
 				<div style={{ display: "flex" }}>
-					<Col lg="7">
+					<Col lg="7" sm="6">
 						<UserGreetings />
 						<Button
 							style={{
@@ -19,14 +19,14 @@ export default function Herobanner() {
 								height: 45,
 							}}
 							variant="outline-danger"
-							size="lg"
+							size="lg, sm, xl"
 							color="black"
 							className="hero-banner btn"
 						>
 							Shop Sale Now!
 						</Button>
 					</Col>
-					<Col lg="3">
+					<Col lg="3" sm="4" xs="5">
 						<Row className="image_row">
 							<Image
 								className="heroimage"

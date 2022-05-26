@@ -1,4 +1,4 @@
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Container } from "react-bootstrap";
 import { useState, useContext, useEffect } from "react";
 import { CustomerContext } from "../App";
 import * as api from "../API.js";
@@ -75,8 +75,8 @@ export default function LoginPage() {
 	}
 
 	return (
-		<div className="mx-auto" style={{ maxWidth: "300px" }}>
-			<Form>
+		<Container className="container_form">
+			<Form className="signup_form" div class="signup_form">
 				<Form.Group className="mb-3" controlId="formFirstName">
 					<Form.Label>First name:</Form.Label>
 					<Form.Control
@@ -125,6 +125,6 @@ export default function LoginPage() {
 					</Col>
 				</Row>
 			</Form>
-		</div>
+		</Container>
 	);
 }

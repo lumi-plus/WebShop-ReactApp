@@ -26,7 +26,6 @@ export default function Sale() {
 	if (read) {
 		return (
 			<div>
-				<Herobanner />
 				<div className="main-container">
 					<div className="cards-container">
 						{data.map((item) => {
