@@ -18,7 +18,7 @@ export default function Cart() {
 	const [customerGlobal, setCustomerGlobal] = useContext(CustomerContext);
 	// const [products, setBasket] = useState(api.getBasket(customerGlobal.id).then(p => setBasket(p)));
 	const [products, setBasket] = useState([]);
-	// const [totalItemCount, setTotalItemCount] = useState([]);
+	const [totalItemCount, setTotalItemCount] = useState([]);
 	useEffect(() => {
 		  fetchData();
 		}, []);
@@ -34,16 +34,19 @@ export default function Cart() {
 	
 		async function addToBasket(idd) {
 			await api.addItemToBasket(customerGlobal.id,idd,1);
-			// setTotalItemCount(calculateTotal());
+			calculateTotal();
 			fetchData();
 
 			}
 		
 		  async function removeFromBasket(idd) {
 			await api.addItemToBasket(customerGlobal.id,idd,-1);
+			calculateTotal();
 			// setTotalItemCount(calculateTotal());
 			fetchData();
 			}
+
+
 			const handleClickOpen = (event) => {
 				//setOpen(true);
 				swal( "Congratulations!" ,"Your order has been successfully realized!\nThank you for shopping with us!");
@@ -52,13 +55,13 @@ export default function Cart() {
 
 	
 
-			//   const calculateTotal = () => {
-			// 	const totalItem = Array.from(products)?.reduce((total, item) => {
-			// 		return total + item.itemQuantity;
-			// 	}, 0);
+			  const calculateTotal = () => {
+				const totalItem = Array.from(products)?.reduce((total, item) => {
+					return total + item.itemQuantity;
+				}, 0);
 		
-			// 	setTotalItemCount(totalItem+1);
-			// };
+				setTotalItemCount(totalItem);
+			};
 		
 		
 
@@ -108,7 +111,7 @@ export default function Cart() {
 						</div>
 					))}
 				<Total><PriceDetail><Text>$Total</Text></PriceDetail></Total>
-				<Total><PriceDetail><Text>Ammount of items:  </Text></PriceDetail></Total>
+				<Total><PriceDetail><Text>Ammount of items: {totalItemCount}   </Text></PriceDetail></Total>
 				<PriceDetail><Text>$0</Text></PriceDetail>
 				
 			
