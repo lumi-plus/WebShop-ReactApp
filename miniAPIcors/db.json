@@ -411,6 +411,29 @@
           "itemQuantity": 20
         }
       ]
+    },
+    {
+      "customerId": 809947627630,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": []
+    },
+    {
+      "customerId": 508424553234,
+      "customerFirstName": "",
+      "customerEmail": "",
+      "customerBasket": []
+    },
+    {
+      "customerId": 343112241401,
+      "customerFirstName": "Elo1213",
+      "customerEmail": "",
+      "customerBasket": [
+        {
+          "itemId": 21,
+          "itemQuantity": 1
+        }
+      ]
     }
   ],
   "items": [
