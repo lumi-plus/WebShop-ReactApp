@@ -20,7 +20,7 @@ export default function Size_Filter() {
 
 	return (
 		<Dropdown>
-			<Dropdown.Toggle variant="success" id="dropdown-basic">
+			<Dropdown.Toggle variant="light" id="dropdown-basic">
 				{message}
 			</Dropdown.Toggle>
 
